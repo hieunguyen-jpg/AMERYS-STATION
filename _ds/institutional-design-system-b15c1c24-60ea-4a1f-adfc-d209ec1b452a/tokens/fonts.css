@@ -1,0 +1,16 @@
+/* SVN-Graphik — UI, data, all interface text. Vietnamese-extended cuts. */
+@font-face{font-family:"SVN-Graphik";src:url("../assets/fonts/SVN-Graphik-Light.otf") format("opentype");font-weight:300;font-style:normal;font-display:swap}
+@font-face{font-family:"SVN-Graphik";src:url("../assets/fonts/SVN-Graphik-Regular.otf") format("opentype");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"SVN-Graphik";src:url("../assets/fonts/SVN-Graphik-Italic.otf") format("opentype");font-weight:400;font-style:italic;font-display:swap}
+@font-face{font-family:"SVN-Graphik";src:url("../assets/fonts/SVN-Graphik-Medium.otf") format("opentype");font-weight:500;font-style:normal;font-display:swap}
+@font-face{font-family:"SVN-Graphik";src:url("../assets/fonts/SVN-Graphik-Medium-Italic.otf") format("opentype");font-weight:500;font-style:italic;font-display:swap}
+@font-face{font-family:"SVN-Graphik";src:url("../assets/fonts/SVN-Graphik-Semibold.otf") format("opentype");font-weight:600;font-style:normal;font-display:swap}
+@font-face{font-family:"SVN-Graphik";src:url("../assets/fonts/SVN-Graphik-Bold.otf") format("opentype");font-weight:700;font-style:normal;font-display:swap}
+@font-face{font-family:"SVN-Graphik";src:url("../assets/fonts/SVN-Graphik-Super.otf") format("opentype");font-weight:900;font-style:normal;font-display:swap}
+
+/* SVN-Adobe Caslon — editorial display, pull quotes, report covers. Never for UI chrome. */
+@font-face{font-family:"SVN-Caslon";src:url("../assets/fonts/SVN-Caslon-Regular.ttf") format("truetype");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"SVN-Caslon";src:url("../assets/fonts/SVN-Caslon-Italic.ttf") format("truetype");font-weight:400;font-style:italic;font-display:swap}
+@font-face{font-family:"SVN-Caslon";src:url("../assets/fonts/SVN-Caslon-Semibold.ttf") format("truetype");font-weight:600;font-style:normal;font-display:swap}
+@font-face{font-family:"SVN-Caslon";src:url("../assets/fonts/SVN-Caslon-Bold.ttf") format("truetype");font-weight:700;font-style:normal;font-display:swap}
+@font-face{font-family:"SVN-Caslon";src:url("../assets/fonts/SVN-Caslon-Bold-Italic.ttf") format("truetype");font-weight:700;font-style:italic;font-display:swap}

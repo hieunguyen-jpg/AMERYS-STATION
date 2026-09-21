@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+html,body{margin:0;padding:0;background:#eef4f4;-webkit-font-smoothing:antialiased}
+*{box-sizing:border-box}
+a{color:#06859d;text-decoration:none}
+a:hover{color:#024668}
+::selection{background:#b4d5d8;color:#024668}
+@keyframes riseIn{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+@keyframes drift{from{background-position:0 0}to{background-position:120px 0}}
+.hidescroll::-webkit-scrollbar{display:none}
+</style>
+<script src="./image-slot.js"></script>
+</helmet>
+<div style="min-height:100vh;display:flex;justify-content:center;background:#eef4f4;font-family:'Be Vietnam Pro',system-ui,sans-serif">
+<div style="width:100%;max-width:520px;background:#fbf8f3;min-height:100vh;position:relative;box-shadow:0 0 60px rgba(2,70,104,.10)">
+
+<div style="position:sticky;top:0;z-index:30;display:flex;align-items:center;justify-content:space-between;padding:14px 20px;background:rgba(251,248,243,.92);backdrop-filter:blur(10px);border-bottom:1px solid rgba(2,70,104,.10)">
+<div style="display:flex;flex-direction:column;gap:2px;cursor:pointer" onClick="{{ goHome }}">
+<div style="font-family:Montserrat,sans-serif;font-weight:300;font-size:19px;letter-spacing:.28em;color:#024668;line-height:1">AMÉRYS</div>
+<div style="font-family:Montserrat,sans-serif;font-weight:400;font-size:7.5px;letter-spacing:.34em;color:#06859d">PHU QUOC</div>
+</div>
+<div style="display:flex;align-items:center;gap:8px;padding:6px 12px;border:1px solid rgba(2,70,104,.18);border-radius:999px;font-size:10.5px;letter-spacing:.14em;color:#024668;text-transform:uppercase" style-hover="border-color:#06859d;color:#06859d">
+<span style="width:6px;height:6px;border-radius:50%;background:#bf704c;display:inline-block"></span>Togetherness Passport
+</div>
+</div>
+
+<sc-if value="{{ isHome }}" hint-placeholder-val="{{ true }}">
+<div style="animation:fadeIn .4s ease-out both">
+<div style="position:relative;overflow:hidden;background:#024668;padding:56px 26px 48px;color:#fbf8f3">
+<div style="position:absolute;inset:0;opacity:.18;background:repeating-linear-gradient(90deg,transparent 0 10px,#b4d5d8 10px 12px);animation:drift 14s linear infinite;pointer-events:none"></div>
+<div style="position:absolute;right:-60px;top:-60px;width:220px;height:220px;border:1px solid rgba(180,213,216,.35);border-radius:50%"></div>
+<div style="position:relative">
+<div style="font-size:10px;letter-spacing:.32em;text-transform:uppercase;color:#b4d5d8;margin-bottom:22px">Hướng dẫn tham gia</div>
+<h1 style="font-family:Montserrat,sans-serif;font-weight:200;font-size:44px;line-height:1.02;letter-spacing:.02em;margin:0 0 6px;text-wrap:balance">THE STAMP<br><span style="font-weight:500">PLAYBOOK</span></h1>
+<div style="width:52px;height:2px;background:#bf704c;margin:22px 0 24px"></div>
+<p style="margin:0 0 18px;font-size:14.5px;line-height:1.6;color:rgba(251,248,243,.86);font-style:italic;max-width:42ch">Feel free to pick your play and hunt for every stamp. At each milestone, present your Togetherness Passport at the Reception to unlock surprise rewards for you and your teammates.</p>
+<p style="margin:0;font-size:15px;line-height:1.65;color:#fbf8f3;max-width:42ch">Tự do chọn trải nghiệm, thỏa sức săn tem. Sau mỗi chặng, hãy mang Togetherness Passport đến Lễ tân để đổi lấy những món quà đặc biệt dành tặng bạn và “đồng đội”.</p>
+<div onClick="{{ goOverview }}" style="margin-top:32px;display:inline-flex;align-items:center;gap:14px;padding:15px 24px;background:#bf704c;color:#fbf8f3;border-radius:2px;cursor:pointer;font-size:13.5px;font-weight:500;letter-spacing:.04em;transition:background .18s ease,transform .18s ease,box-shadow .18s ease" style-hover="background:#fbf8f3;color:#024668;transform:translateY(-2px);box-shadow:0 10px 26px rgba(0,0,0,.22)">
+Xem tất cả hoạt động <span style="font-size:16px">→</span>
+</div>
+<div style="margin-top:12px;font-size:11px;letter-spacing:.1em;color:rgba(180,213,216,.85)">Explore all activities</div>
+</div>
+</div>
+
+<div style="display:grid;grid-template-columns:repeat(3,1fr);border-bottom:1px solid rgba(2,70,104,.10)">
+<div style="padding:20px 14px;text-align:center;border-right:1px solid rgba(2,70,104,.10)">
+<div style="font-family:Montserrat,sans-serif;font-size:26px;font-weight:300;color:#024668">08</div>
+<div style="font-size:9.5px;letter-spacing:.16em;text-transform:uppercase;color:#06859d;margin-top:4px">Trạm</div>
+</div>
+<div style="padding:20px 14px;text-align:center;border-right:1px solid rgba(2,70,104,.10)">
+<div style="font-family:Montserrat,sans-serif;font-size:26px;font-weight:300;color:#024668">+1</div>
+<div style="font-size:9.5px;letter-spacing:.16em;text-transform:uppercase;color:#06859d;margin-top:4px">Tem / trạm</div>
+</div>
+<div style="padding:20px 14px;text-align:center">
+<div style="font-family:Montserrat,sans-serif;font-size:26px;font-weight:300;color:#024668">24h</div>
+<div style="font-size:9.5px;letter-spacing:.16em;text-transform:uppercase;color:#06859d;margin-top:4px">Lễ tân</div>
+</div>
+</div>
+
+<div style="padding:30px 22px 46px">
+<div style="font-size:10px;letter-spacing:.24em;text-transform:uppercase;color:#bf704c;margin-bottom:16px">Cách chơi · How it works</div>
+<div style="display:flex;flex-direction:column;gap:2px">
+<div style="display:flex;gap:16px;padding:16px 4px;border-top:1px solid rgba(2,70,104,.12)">
+<div style="font-family:Montserrat,sans-serif;font-size:13px;color:#b4d5d8;font-weight:500;min-width:22px">01</div>
+<div><div style="font-size:14px;color:#024668;font-weight:500">Chọn trạm bạn thích, không cần theo thứ tự.</div><div style="font-size:12px;color:#7a8a93;font-style:italic;margin-top:3px">Pick any station, in any order.</div></div>
+</div>
+<div style="display:flex;gap:16px;padding:16px 4px;border-top:1px solid rgba(2,70,104,.12)">
+<div style="font-family:Montserrat,sans-serif;font-size:13px;color:#b4d5d8;font-weight:500;min-width:22px">02</div>
+<div><div style="font-size:14px;color:#024668;font-weight:500">Hoàn thành thử thách và chụp lại khoảnh khắc.</div><div style="font-size:12px;color:#7a8a93;font-style:italic;margin-top:3px">Complete the challenge and capture the moment.</div></div>
+</div>
+<div style="display:flex;gap:16px;padding:16px 4px;border-top:1px solid rgba(2,70,104,.12);border-bottom:1px solid rgba(2,70,104,.12)">
+<div style="font-family:Montserrat,sans-serif;font-size:13px;color:#b4d5d8;font-weight:500;min-width:22px">03</div>
+<div><div style="font-size:14px;color:#024668;font-weight:500">Mang passport đến Lễ tân để đóng tem và nhận quà.</div><div style="font-size:12px;color:#7a8a93;font-style:italic;margin-top:3px">Show your passport at Reception to get stamped.</div></div>
+</div>
+</div>
+</div>
+</div>
+</sc-if>
+
+<sc-if value="{{ isOverview }}" hint-placeholder-val="{{ false }}">
+<div style="animation:riseIn .38s ease-out both;padding:28px 20px 56px">
+<div style="display:flex;align-items:baseline;justify-content:space-between;margin-bottom:6px">
+<h2 style="font-family:Montserrat,sans-serif;font-weight:300;font-size:28px;letter-spacing:.06em;color:#024668;margin:0">08 TRẠM</h2>
+<span style="font-size:11px;letter-spacing:.14em;color:#06859d;text-transform:uppercase">All activities</span>
+</div>
+<p style="margin:0 0 24px;font-size:13px;color:#7a8a93;line-height:1.6">Chạm vào một trạm để xem hướng dẫn chi tiết.<span style="font-style:italic"> · Tap a station for the full guide.</span></p>
+
+<div style="display:flex;flex-direction:column;gap:12px">
+<sc-for list="{{ stations }}" as="st" hint-placeholder-count="8">
+<div onClick="{{ st.open }}" style="position:relative;display:flex;gap:16px;padding:18px 18px 18px 16px;background:#ffffff;border:1px solid rgba(2,70,104,.12);border-radius:3px;cursor:pointer;overflow:hidden;transition:transform .2s cubic-bezier(.2,0,.2,1),box-shadow .2s ease,border-color .2s ease" style-hover="transform:translateY(-3px);box-shadow:0 14px 30px rgba(2,70,104,.14);border-color:#06859d">
+<div style="position:absolute;left:0;top:0;bottom:0;width:3px;background:{{ st.color }}"></div>
+<div style="position:relative;min-width:78px;width:78px;height:78px">
+<image-slot id="{{ st.slot }}" shape="rounded" radius="3" placeholder="Ảnh trạm"></image-slot>
+<div style="position:absolute;right:-8px;bottom:-8px;width:28px;height:28px;border-radius:50%;background:{{ st.color }};display:flex;align-items:center;justify-content:center;color:#fbf8f3">
+<span style="width:15px;height:15px;display:block;background-color:currentColor;-webkit-mask:url({{ st.icon }}) center/contain no-repeat;mask:url({{ st.icon }}) center/contain no-repeat"></span>
+</div>
+</div>
+<div style="flex:1;min-width:0">
+<div style="font-family:Montserrat,sans-serif;font-size:10px;letter-spacing:.18em;color:{{ st.color }};margin-bottom:5px">TRẠM {{ st.num }}</div>
+<div style="font-size:15px;font-weight:600;color:#024668;line-height:1.3">{{ st.vi }}</div>
+<div style="font-size:12.5px;color:#7a8a93;font-style:italic;margin-top:2px">{{ st.en }}</div>
+<div style="margin-top:10px;display:flex;align-items:center;gap:6px;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:#06859d">{{ st.locShort }}</div>
+</div>
+<div style="align-self:center;font-size:18px;color:#b4d5d8">→</div>
+</div>
+</sc-for>
+</div>
+
+<div onClick="{{ goHome }}" style="margin-top:28px;text-align:center;font-size:12px;letter-spacing:.1em;color:#7a8a93;cursor:pointer;padding:12px" style-hover="color:#024668">← Về trang giới thiệu</div>
+</div>
+</sc-if>
+
+<sc-if value="{{ isDetail }}" hint-placeholder-val="{{ false }}">
+<div>
+<div class="hidescroll" style="position:sticky;top:57px;z-index:20;display:flex;gap:0;overflow-x:auto;background:#fbf8f3;border-bottom:1px solid rgba(2,70,104,.12);scrollbar-width:none">
+<sc-for list="{{ stations }}" as="st" hint-placeholder-count="8">
+<div onClick="{{ st.open }}" style="flex:none;padding:14px 16px 12px;cursor:pointer;white-space:nowrap;font-size:12px;letter-spacing:.06em;transition:color .18s ease,background .18s ease;color:{{ st.tabColor }};background:{{ st.tabBg }};border-bottom:2px solid {{ st.tabRule }};font-weight:{{ st.tabWeight }}" style-hover="background:#f1ece3;color:#024668">
+<span style="display:inline-flex;align-items:center;gap:7px"><span style="width:14px;height:14px;display:block;background-color:currentColor;-webkit-mask:url({{ st.icon }}) center/contain no-repeat;mask:url({{ st.icon }}) center/contain no-repeat"></span><span style="font-family:Montserrat,sans-serif;opacity:.6">{{ st.num }}</span>{{ st.tabLabel }}</span>
+</div>
+</sc-for>
+</div>
+
+<div style="position:relative;height:210px;background:#e6eff0">
+<image-slot id="{{ active.slot }}" shape="rect" placeholder="Thả ảnh minh hoạ cho trạm này"></image-slot>
+<div style="position:absolute;left:22px;bottom:-26px;width:52px;height:52px;border-radius:50%;background:{{ active.color }};border:3px solid #fbf8f3;display:flex;align-items:center;justify-content:center;color:#fbf8f3;pointer-events:none">
+<span style="width:24px;height:24px;display:block;background-color:currentColor;-webkit-mask:url({{ active.icon }}) center/contain no-repeat;mask:url({{ active.icon }}) center/contain no-repeat"></span>
+</div>
+</div>
+<div style="padding:44px 22px 54px;animation:riseIn .32s ease-out both">
+<div style="display:flex;align-items:flex-start;gap:16px;margin-bottom:22px">
+<div style="flex:1;min-width:0">
+<div style="font-family:Montserrat,sans-serif;font-size:10.5px;letter-spacing:.22em;color:{{ active.color }};margin-bottom:8px">TRẠM {{ active.num }} · STATION {{ active.num }}</div>
+<div style="font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:#06859d;margin-bottom:6px">{{ active.en }}</div>
+<h2 style="margin:0;font-family:Montserrat,sans-serif;font-weight:400;font-size:25px;line-height:1.14;letter-spacing:.02em;color:#024668;text-wrap:balance">{{ active.vi }}</h2>
+</div>
+</div>
+
+<div style="padding:18px 20px;background:#eaddca;border-radius:3px;margin-bottom:30px">
+<p style="margin:0 0 6px;font-size:13.5px;font-style:italic;color:#8a6a4f;line-height:1.55">{{ active.taglineEn }}</p>
+<p style="margin:0;font-size:14.5px;color:#024668;line-height:1.55;font-weight:500">{{ active.taglineVi }}</p>
+</div>
+
+<div style="font-size:10px;letter-spacing:.24em;text-transform:uppercase;color:#bf704c;margin-bottom:14px">Cách tham gia · How to join</div>
+<div style="display:flex;flex-direction:column;gap:0;margin-bottom:30px">
+<sc-for list="{{ active.steps }}" as="sp" hint-placeholder-count="3">
+<div style="display:flex;gap:16px;padding:16px 8px 16px 0;border-top:1px solid rgba(2,70,104,.12);transition:background .18s ease,padding-left .18s ease" style-hover="background:#f4f8f8;padding-left:8px">
+<div style="font-family:Montserrat,sans-serif;font-size:13px;font-weight:500;color:#b4d5d8;min-width:24px">{{ sp.n }}</div>
+<div style="flex:1;min-width:0">
+<div style="font-size:14.5px;color:#024668;line-height:1.5;font-weight:500">{{ sp.vi }}</div>
+<div style="font-size:12.5px;color:#7a8a93;font-style:italic;line-height:1.5;margin-top:4px">{{ sp.en }}</div>
+</div>
+</div>
+</sc-for>
+</div>
+
+<div style="border:1px solid rgba(2,70,104,.16);border-radius:3px;padding:18px 20px;background:#ffffff;transition:border-color .18s ease,box-shadow .18s ease" style-hover="border-color:#06859d;box-shadow:0 8px 22px rgba(2,70,104,.10)">
+<div style="font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:#06859d;margin-bottom:10px">Location · Địa điểm</div>
+<div style="font-size:14.5px;color:#024668;font-weight:500;line-height:1.45">{{ active.locVi }}</div>
+<div style="font-size:12.5px;color:#7a8a93;font-style:italic;margin-top:3px;line-height:1.45">{{ active.locEn }}</div>
+</div>
+
+<div style="margin-top:26px;padding:16px 18px;border-left:3px solid #bf704c;background:#fbf3ee">
+<div style="font-size:13px;color:#8a6a4f;line-height:1.55">Hoàn thành xong? Mang <strong style="color:#024668">Togetherness Passport</strong> đến Lễ tân để đóng tem.</div>
+</div>
+
+<div style="display:flex;gap:10px;margin-top:30px">
+<div onClick="{{ prev }}" style="flex:1;padding:14px;text-align:center;border:1px solid rgba(2,70,104,.2);border-radius:2px;cursor:pointer;font-size:12.5px;color:#024668;transition:background .18s ease,border-color .18s ease" style-hover="background:#024668;color:#fbf8f3;border-color:#024668">← Trạm trước</div>
+<div onClick="{{ next }}" style="flex:1;padding:14px;text-align:center;border:1px solid rgba(2,70,104,.2);border-radius:2px;cursor:pointer;font-size:12.5px;color:#024668;transition:background .18s ease,border-color .18s ease" style-hover="background:#024668;color:#fbf8f3;border-color:#024668">Trạm kế →</div>
+</div>
+<div onClick="{{ goOverview }}" style="margin-top:14px;text-align:center;font-size:12px;letter-spacing:.1em;color:#7a8a93;cursor:pointer;padding:10px" style-hover="color:#024668">⊞ Xem tất cả 08 trạm</div>
+</div>
+</div>
+</sc-if>
+
+<div style="padding:22px 20px 34px;border-top:1px solid rgba(2,70,104,.10);text-align:center">
+<div style="font-family:Montserrat,sans-serif;font-weight:300;font-size:13px;letter-spacing:.3em;color:#024668">AMÉRYS</div>
+<div style="font-size:9.5px;letter-spacing:.2em;color:#9aa8ae;margin-top:6px">FAMILY BOUTIQUE HOTEL · PHU QUOC</div>
+</div>
+
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:430,&quot;height&quot;:932}}">
+const DATA = [
+  {en:"Check-in on social media", vi:"NHÀ MÌNH SAY HI!", tab:"Say hi",
+   tEn:"Say hi to your first AMÉRYS memory together.", tVi:"Cả nhà lên hình - hành trình tích tem bắt đầu!",
+   steps:[["Chụp một bức ảnh cùng nhau.","Take a photo together."],
+          ["Đăng ảnh lên Facebook và tag fanpage @AMÉRYS Hotel Phu Quoc kèm hashtag #AmerysPhuQuoc","Post your photo on Facebook, tag @AMÉRYS Hotel Phu Quoc, and use #AmerysPhuQuoc"]],
+   locVi:"AMÉRYS Boutique Hotel Phu Quoc — Sảnh chính hoặc bất kỳ đâu trong khách sạn", locEn:"Main lobby or anywhere in the hotel", locShort:"Toàn khách sạn"},
+  {en:"Sunset Together", vi:"BẠN MUỐN HẸN HÒ... VỚI SUNSET?", tab:"Sunset",
+   tEn:"Pick your favorite sunset spot and make a date with the sky.", tVi:"Chọn một góc thật đẹp và hẹn nhau lúc mặt trời chạm biển.",
+   steps:[["Kiểm tra khung giờ hoàng hôn trong ngày.","Check today's sunset time."],
+          ["Cùng nhau ngắm hoàng hôn.","Enjoy the sunset together."],
+          ["Chụp lại khoảnh khắc bên nhau.","Take a photo of the moment."]],
+   locVi:"Góc ngắm hoàng hôn bạn yêu thích", locEn:"Your favorite sunset spot", locShort:"Ngoài trời"},
+  {en:"Create Together", vi:"THÁCH THỨC DANH HỌA", tab:"Danh hoạ",
+   tEn:"One table, many colors, one little masterpiece together.", tVi:"Mỗi người góp một nét, cả nhà cùng tạo nên một “kiệt tác”.",
+   steps:[["Đến Khu vui chơi trẻ em Azuria trong khung giờ hoạt động.","Visit Azuria Kid Club during opening hours."],
+          ["Dùng vật liệu được chuẩn bị sẵn để cùng hoàn thành một tác phẩm.","Use the materials provided to create one artwork together."],
+          ["Chụp một bức ảnh cùng tác phẩm sau khi hoàn thành.","Take a photo together with your finished artwork."]],
+   locVi:"Khu vui chơi trẻ em Azuria (Tầng 1, 08:00–20:30)", locEn:"Azuria Kid Club (Floor 1, 08:00–20:30)", locShort:"Azuria Kid Club · T1"},
+  {en:"Build Our Family Castle", vi:"CUỘC ĐUA ĐẦY CÁT", tab:"Lâu đài cát",
+   tEn:"Buckets ready. Shovels ready. Let the castle challenge begin!", tVi:"Xô sẵn sàng. Xẻng sẵn sàng. Cả nhà cùng xây lâu đài thôi nào!",
+   steps:[["Đến khu vực cát và chọn dụng cụ có sẵn.","Head to the sand play area and pick up the tools provided."],
+          ["Cùng nhau xây lâu đài cát.","Build your castle together."],
+          ["Chụp một bức ảnh cùng lâu đài sau khi hoàn thành.","Take a photo together with your finished castle."]],
+   locVi:"Khu vui chơi trẻ em Azuria (Tầng 1, 08:00–20:30)", locEn:"Azuria Kid Club (1st Floor, 08:00–20:30)", locShort:"Azuria Kid Club · T1"},
+  {en:"Family Breakfast", vi:"“MASTER” CHÉN", tab:"Bữa sáng",
+   tEn:"No need to be a MasterChef - just master the breakfast table.", tVi:"Không cần làm MasterChef - chỉ cần cả nhà “chén” thật vui!",
+   steps:[["Cùng nhau dùng bữa sáng.","Enjoy breakfast with your partner."],
+          ["Chụp lại bữa ăn sáng cùng nhau.","Take a photo of your breakfast."]],
+   locVi:"Nhà hàng", locEn:"Restaurant", locShort:"Nhà hàng"},
+  {en:"Share Your Stay", vi:"KÝ ỨC VUI VẺ", tab:"Đánh giá",
+   tEn:"A good memory is even better when it gets shared.", tVi:"Một kỳ nghỉ càng đáng nhớ hơn khi được kể lại.",
+   steps:[["Mở Google Maps hoặc TripAdvisor.","Open Google Maps or TripAdvisor."],
+          ["Tìm khách sạn AMÉRYS Phú Quốc.","Find AMÉRYS Hotel Phu Quoc."],
+          ["Chọn số sao theo trải nghiệm thực tế, viết vài dòng cảm nhận và gửi đánh giá.","Choose a rating based on your real experience, write a short review and submit it."]],
+   locVi:"AMÉRYS Boutique Hotel Phu Quoc", locEn:"AMÉRYS Boutique Hotel Phu Quoc", locShort:"Online"},
+  {en:"Postcard to your beloved", vi:"“DEAR” ĐI CHỜ CHI", tab:"Bưu thiếp",
+   tEn:"Dear someone, a little piece of Phu Quoc is on its way.", tVi:"Có lời muốn gửi thì “Dear” đi chờ chi!",
+   steps:[["Nhận một tấm bưu thiếp AMÉRYS tại Memory Corner.","Pick up an AMÉRYS postcard at the Memory Corner."],
+          ["Viết lời nhắn và địa chỉ người nhận.","Write your message and the recipient's address."],
+          ["Bỏ bưu thiếp vào hòm thư. AMÉRYS sẽ giúp bạn gửi đi.","Place it in the mail box. AMÉRYS will help send it for you."]],
+   locVi:"Sảnh chính", locEn:"Lobby · Memory Corner", locShort:"Sảnh chính"},
+  {en:"Spa Experience", vi:"ƠN GIỜI, SPA ĐÂY RỒI!", tab:"Spa",
+   tEn:"Your only mission here: relax.", tVi:"Nhiệm vụ duy nhất ở trạm này: thư giãn.",
+   steps:[["Trải nghiệm một dịch vụ bất kỳ tại LES SENS Spa & Wellness.","Enjoy an experience at LES SENS Spa & Wellness."],
+          ["Chia sẻ đánh giá về trải nghiệm dịch vụ trên Google.","Leave a review of LES SENS Spa & Wellness on Google."],
+          ["Chụp thêm một tấm hình kỷ niệm để nhận thêm +1 tem.","Take a keepsake photo if you'd like to collect an extra stamp."]],
+   locVi:"LES SENS Spa & Wellness (Tầng 7 · 09:00 – 21:00)", locEn:"LES SENS Spa & Wellness (Floor 7)", locShort:"LES SENS · T7"}
+];
+const ICONS = ["camera","sunset","palette","castle","coffee","star","mail","flower-2"];
+const ICO = n => "https://unpkg.com/lucide-static@0.487.0/icons/" + n + ".svg";
+const PALETTE = ["#06859d","#bf704c","#024668","#06859d","#bf704c","#024668","#06859d","#bf704c"];
+
+class Component extends DCLogic {
+  state = { view: "home", i: 0 };
+  go = (view, i) => { this.setState(i === undefined ? {view} : {view, i}); window.scrollTo({top:0}); };
+  renderVals() {
+    const cur = this.state.i;
+    const detail = this.state.view === "detail";
+    const stations = DATA.map((d, idx) => {
+      const on = detail && idx === cur;
+      return {
+        num: String(idx + 1).padStart(2, "0"),
+        en: d.en, vi: d.vi, tabLabel: d.tab,
+        color: PALETTE[idx],
+        icon: ICO(ICONS[idx]),
+        slot: "st" + (idx + 1) + "-thumb",
+        locShort: d.locShort,
+        tabColor: on ? "#024668" : "#8f9ba2",
+        tabBg: on ? "#ffffff" : "transparent",
+        tabRule: on ? PALETTE[idx] : "transparent",
+        tabWeight: on ? 600 : 400,
+        open: () => this.go("detail", idx)
+      };
+    });
+    const d = DATA[cur];
+    return {
+      stations,
+      isHome: this.state.view === "home",
+      isOverview: this.state.view === "overview",
+      isDetail: detail,
+      goHome: () => this.go("home"),
+      goOverview: () => this.go("overview"),
+      prev: () => this.go("detail", (cur + DATA.length - 1) % DATA.length),
+      next: () => this.go("detail", (cur + 1) % DATA.length),
+      active: {
+        num: String(cur + 1).padStart(2, "0"),
+        en: d.en, vi: d.vi, color: PALETTE[cur],
+        icon: ICO(ICONS[cur]), slot: "st" + (cur + 1) + "-hero",
+        taglineEn: d.tEn, taglineVi: d.tVi,
+        locVi: d.locVi, locEn: d.locEn,
+        steps: d.steps.map((s, k) => ({ n: String(k + 1).padStart(2, "0"), vi: s[0], en: s[1] }))
+      }
+    };
+  }
+}
+</script>
+</body>
+</html>
