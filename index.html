@@ -40,8 +40,8 @@ h1{font-family:Montserrat,sans-serif;font-weight:200;font-size:clamp(34px,10.5vw
 h1 b{font-weight:500}
 .wmark{color:var(--aqua);width:clamp(96px,30vw,132px);margin:18px 0 22px}
 .hero p{max-width:40ch}
-.hero .pen{margin:0 0 16px;font-size:clamp(13px,3.7vw,14.5px);line-height:1.6;color:rgba(251,248,243,.84);font-style:italic}
-.hero .pvi{margin:0;font-size:clamp(14px,4vw,15.5px);line-height:1.65}
+.hero .pen{margin:0 0 15px;font-size:clamp(12px,3.2vw,13px);line-height:1.6;color:rgba(251,248,243,.84);font-style:italic}
+.hero .pvi{margin:0;font-size:clamp(13px,3.5vw,14px);line-height:1.62}
 .cta{margin-top:28px;width:100%;max-width:360px;display:flex;align-items:center;justify-content:space-between;gap:14px;padding:15px 18px;background:var(--terra);color:var(--paper);border:0;border-radius:2px;cursor:pointer;text-align:left;min-height:56px;transition:background .18s,color .18s,box-shadow .18s}
 .cta:hover{background:var(--paper);color:var(--navy);box-shadow:0 10px 26px rgba(0,0,0,.2)}
 .cta .l1{display:block;font-size:14px;font-weight:500;letter-spacing:.03em}
@@ -147,7 +147,7 @@ body.edit .app{box-shadow:0 0 0 2px var(--terra),0 0 60px rgba(2,70,104,.10)}
   <div class="pill"><span class="dot"></span><span class="pt" id="pillText">Togetherness Passport</span></div>
 </div>
 <main id="view"></main>
-<footer>
+<footer id="foot">
   <span class="fw" id="footwave"></span>
   <div class="w" id="footname">AMÉRYS</div>
   <div class="s" id="footline">FAMILY BOUTIQUE HOTEL · PHU QUOC</div>
@@ -174,7 +174,7 @@ body.edit .app{box-shadow:0 0 0 2px var(--terra),0 0 60px rgba(2,70,104,.10)}
     "eyebrow": "Hướng dẫn tham gia",
     "titleTop": "THE STAMP",
     "titleBottom": "PLAYBOOK",
-    "en": "Feel free to pick your play and hunt for every stamp. At each milestone, present your Togetherness Passport at the Reception to unlock surprise rewards for you and your teammates.",
+    "en": "At each milestone, present your Togetherness Passport at the Reception to unlock surprise rewards for you and your teammates.",
     "vi": "Sau mỗi chặng, hãy mang Togetherness Passport đến Lễ tân để đổi lấy những món quà đặc biệt dành tặng bạn và “đồng đội”.",
     "cta": "Xem tất cả hoạt động",
     "ctaSub": "Explore all activities",
@@ -431,7 +431,7 @@ function homeView(){const h=C.hero;return '<div class="fade">'+
 
 function overviewView(){return '<section class="sec" style="animation:riseIn .34s ease-out both">'+
 '<div class="ohead"><h2>'+pad(C.stations.length)+' TRẠM</h2><span>All activities</span></div>'+
-'<p class="olead">Chạm vào một trạm để xem hướng dẫn chi tiết.<i> · Tap a station for the full guide.</i></p>'+
+'<p class="olead">Chạm vào một trạm để xem hướng dẫn chi tiết.<i><br>Tap a station for the full guide.</i></p>'+
 (state.edit?'<div class="etools"><span class="t">Danh sách trạm</span><button class="esm" data-act="addStation">+ Thêm trạm</button><span class="efield">▲▼ để đổi thứ tự</span></div>':"")+
 '<div class="cards">'+C.stations.map((d,i)=>
  '<div style="position:relative">'+
@@ -514,6 +514,7 @@ document.addEventListener("click",e=>{
 
 function render(){
   applyTheme();chrome();
+  document.getElementById("foot").style.display=state.view==="home"?"none":"flex";
   document.getElementById("view").innerHTML =
     state.view==="home"?homeView():state.view==="overview"?overviewView():detailView();
   editBar();
