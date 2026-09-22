@@ -20,8 +20,7 @@
     "en": "At each milestone, present your Togetherness Passport at the Reception to unlock surprise rewards for you and your teammates.",
     "vi": "Sau mỗi chặng, hãy mang Togetherness Passport đến Lễ tân để đổi lấy những món quà đặc biệt dành tặng bạn và “đồng đội”.",
     "cta": "Xem tất cả hoạt động",
-    "ctaSub": "Explore all activities",
-    "note": "Hoàn thành xong? Mang <strong>Togetherness Passport</strong> đến Lễ tân để đóng tem."
+    "ctaSub": "Explore all activities"
   },
   "stations": [
     {
@@ -224,5 +223,25 @@
       "locEn": "LES SENS Spa & Wellness (Floor 7)",
       "locShort": "LES SENS · T7"
     }
-  ]
+  ],
+  "ui": {
+    "noteVi": "Hoàn thành xong? Mang Togetherness Passport đến Lễ tân để đóng tem.",
+    "noteEn": "All done? Bring your Togetherness Passport to the Reception to get it stamped.",
+    "prevVi": "Trạm trước",
+    "prevEn": "Previous",
+    "nextVi": "Trạm kế",
+    "nextEn": "Next",
+    "allVi": "Xem tất cả các trạm",
+    "allEn": "See all stations",
+    "backVi": "Về trang giới thiệu",
+    "backEn": "Back to intro",
+    "howVi": "Cách tham gia",
+    "howEn": "How to join",
+    "locVi": "Địa điểm",
+    "locEn": "Location",
+    "listVi": "Chạm vào một trạm để xem hướng dẫn chi tiết.",
+    "listEn": "Tap a station for the full guide.",
+    "stationWord": "TRẠM",
+    "stationWordEn": "STATION"
+  }
 }
