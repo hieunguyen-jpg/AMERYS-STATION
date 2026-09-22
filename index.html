@@ -92,7 +92,9 @@ h2.title{margin:0;font-family:Montserrat,sans-serif;font-weight:400;font-size:cl
 .step .vi{font-size:14px;font-weight:500;line-height:1.5}
 .step .en{font-size:12px;font-style:italic;color:var(--muted);line-height:1.5;margin-top:3px}
 .loc{border:1px solid rgba(2,70,104,.16);border-radius:3px;padding:16px 18px;background:#fff}
-.loc .lab{font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--teal);margin-bottom:9px}
+.locpic{margin:14px -18px -16px;border-top:1px solid rgba(2,70,104,.12);border-radius:0 0 3px 3px;overflow:hidden;background:#e6eff0}
+.locpic img{display:block;width:100%;aspect-ratio:3/2;object-fit:cover}
+.loc .lab{font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:#A80D26;margin-bottom:9px}
 .loc .vi{font-size:14px;font-weight:500;line-height:1.45}
 .loc .en{font-size:12px;font-style:italic;color:var(--muted);margin-top:3px;line-height:1.45}
 .note{margin-top:22px;padding:15px 17px;border-left:3px solid var(--terra);background:#fbf3ee;color:#8a6a4f}
@@ -116,6 +118,44 @@ footer .flogo{width:clamp(104px,28vw,138px);height:auto}
 @media (max-width:400px){.pill span.pt{display:none}.pill{padding:8px 9px}}
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
 
+.rhero{position:relative;overflow:hidden;background:var(--navy);color:var(--paper);padding:clamp(28px,8vw,40px) var(--gut) clamp(30px,8vw,42px)}
+.rhero .bgwave{position:absolute;left:-8%;right:-8%;bottom:-12px;color:rgba(180,213,216,.2)}
+.rhero .eb{position:relative;font-size:10px;letter-spacing:.28em;text-transform:uppercase;color:var(--aqua)}
+.rhero h2{position:relative;margin:12px 0 0;max-width:474px;font-family:Montserrat,sans-serif;font-weight:300;font-size:clamp(23px,7vw,29px);line-height:1.12;letter-spacing:.02em;text-wrap:balance}
+.rhero .hen{position:relative;margin:8px 0 0;max-width:357px;font-size:clamp(12px,3.4vw,13.5px);font-style:italic;color:rgba(251,248,243,.82);line-height:1.5;max-width:40ch}
+.rhero .hvi{position:relative;margin:14px 0 0;font-size:clamp(13px,3.5vw,14px);line-height:1.6;max-width:40ch}
+.tiers{display:flex;flex-direction:column;gap:clamp(14px,4vw,18px)}
+.tier{position:relative;background:#fff;border:1px solid var(--line);border-radius:4px;overflow:hidden}
+.tier .top{display:flex;align-items:center;gap:14px;padding:16px 16px 14px;border-bottom:1px solid var(--line)}
+.tier .med{flex:none;width:83px;height:81px;border-radius:50%;border:1px dashed currentColor;display:flex;flex-direction:column;align-items:center;justify-content:center;line-height:1}
+.tier .med b{font-family:Montserrat,sans-serif;font-weight:400;font-size:19px}
+.tier .med i{font-size:7px;letter-spacing:.14em;font-style:normal;margin-top:3px}
+.tier .ten{font-size:9.5px;letter-spacing:.18em;text-transform:uppercase;display:block}
+.tier h3{margin:5px 0 0;font-family:Montserrat,sans-serif;font-weight:500;font-size:clamp(15px,4.4vw,17px);letter-spacing:.04em;line-height:1.2;color:var(--navy);text-wrap:balance}
+.tier .tvi2{display:block;margin-top:3px;font-size:11.5px;letter-spacing:.1em;color:var(--muted);text-transform:uppercase}
+.tier .lead{padding:14px 16px;background:var(--sand)}
+.tier .lead .len2{margin:0;font-size:12px;font-style:italic;color:#8a6a4f;line-height:1.5}
+.tier .lead .lvi{margin:5px 0 0;font-size:13px;font-weight:500;color:#8E0B20;line-height:1.5}
+.tier ul{list-style:none;margin:0;padding:4px 16px 16px}
+.tier li{display:flex;gap:12px;padding:13px 0;border-bottom:1px solid var(--line)}
+.tier li:last-child{border-bottom:0}
+.tier li .ric{flex:none;width:34px;height:34px;border-radius:50%;background:var(--paper);border:1px solid var(--line);display:flex;align-items:center;justify-content:center}
+.frames{display:flex;gap:clamp(10px,3vw,16px);justify-content:center;padding:18px 16px 4px}
+.frame{flex:1 1 0;min-width:0;max-width:170px;background:#fff;padding:7px 7px 24px;border:1px solid var(--line);box-shadow:0 6px 18px rgba(2,70,104,.12);border-radius:2px}
+.frame:first-child{transform:rotate(-2.2deg)}
+.frame:last-child{transform:rotate(2.4deg)}
+.frame .ph{position:relative;aspect-ratio:4/3;background:#e6eff0;overflow:hidden;display:flex;align-items:center;justify-content:center;color:#a9c3c7}
+.frame .ph img{width:100%;height:100%;object-fit:cover}
+.tier li .ren{display:block;font-size:12px;font-weight:500;line-height:1.45;color:var(--navy)}
+.tier li .rvi{display:block;font-size:12px;font-style:italic;line-height:1.45;color:var(--muted);margin-top:3px}
+.fine{margin-top:22px;text-align:center;font-size:10.5px;color:#9aa8ae;line-height:1.7}
+.fine i{display:block;font-size:10px}
+.rewardlink{display:flex;align-items:center;gap:13px;width:100%;margin-top:14px;padding:14px 16px;background:var(--navy);color:var(--paper);border:0;border-radius:3px;cursor:pointer;text-align:left;min-height:58px;transition:background .18s,color .18s}
+.rewardlink:hover{background:var(--terra)}
+.rewardlink .ri{flex:none}
+.rewardlink .r1{display:block;font-size:13.5px;font-weight:500;letter-spacing:.03em}
+.rewardlink .r2{display:block;font-size:10.5px;font-style:italic;opacity:.8;margin-top:2px}
+.rewardlink .ar{margin-left:auto;font-size:17px}
 /* ---------- Chế độ soạn thảo (#edit) ---------- */
 body.edit{padding-bottom:120px}
 body.edit .app{box-shadow:0 0 0 2px var(--terra),0 0 60px rgba(2,70,104,.10)}
@@ -175,7 +215,7 @@ body.edit .app{box-shadow:0 0 0 2px var(--terra),0 0 60px rgba(2,70,104,.10)}
     "passport": "Togetherness Passport"
   },
   "hero": {
-    "eyebrow": "Hướng dẫn tham gia",
+    "eyebrow": "",
     "titleTop": "THE STAMP",
     "titleBottom": "PLAYBOOK",
     "en": "At each milestone, present your Togetherness Passport at the Reception to unlock surprise rewards for you and your teammates.",
@@ -198,13 +238,14 @@ body.edit .app{box-shadow:0 0 0 2px var(--terra),0 0 60px rgba(2,70,104,.10)}
           "en": "Take a photo together."
         },
         {
-          "vi": "Đăng ảnh lên Facebook và tag fanpage @AMÉRYS Hotel Phu Quoc kèm hashtag #AmerysPhuQuoc",
+          "vi": "Đăng ảnh lên Facebook và tag fanpage <u>@AMÉRYS Hotel Phu Quoc</u> kèm hashtag <b style=\"color:#8E0B20\">#AmerysPhuQuoc</b>",
           "en": "Post your photo on Facebook, tag @AMÉRYS Hotel Phu Quoc, and use #AmerysPhuQuoc"
         }
       ],
-      "locVi": "AMÉRYS Boutique Hotel Phu Quoc — Sảnh chính hoặc bất kỳ đâu trong khách sạn",
+      "locVi": "AMÉRYS Hotel Phu Quoc",
       "locEn": "Main lobby or anywhere in the hotel",
-      "locShort": "Toàn khách sạn"
+      "locShort": "Toàn khách sạn",
+      "photo": "images/loc-lobby.jpg"
     },
     {
       "tab": "Sunset",
@@ -230,7 +271,8 @@ body.edit .app{box-shadow:0 0 0 2px var(--terra),0 0 60px rgba(2,70,104,.10)}
       ],
       "locVi": "Góc ngắm hoàng hôn bạn yêu thích",
       "locEn": "Your favorite sunset spot",
-      "locShort": "Ngoài trời"
+      "locShort": "Ngoài trời",
+      "photo": "images/loc-sunset.jpg"
     },
     {
       "tab": "Danh hoạ",
@@ -256,7 +298,8 @@ body.edit .app{box-shadow:0 0 0 2px var(--terra),0 0 60px rgba(2,70,104,.10)}
       ],
       "locVi": "Khu vui chơi trẻ em Azuria (Tầng 1, 08:00–20:30)",
       "locEn": "Azuria Kid Club (Floor 1, 08:00–20:30)",
-      "locShort": "Azuria Kid Club · T1"
+      "locShort": "Azuria Kid Club · T1",
+      "photo": "images/loc-kidclub-entrance.jpg"
     },
     {
       "tab": "Lâu đài cát",
@@ -280,9 +323,10 @@ body.edit .app{box-shadow:0 0 0 2px var(--terra),0 0 60px rgba(2,70,104,.10)}
           "en": "Take a photo together with your finished castle."
         }
       ],
-      "locVi": "Khu vui chơi trẻ em Azuria (Tầng 1, 08:00–20:30)",
+      "locVi": "Azuria Kid Club",
       "locEn": "Azuria Kid Club (1st Floor, 08:00–20:30)",
-      "locShort": "Azuria Kid Club · T1"
+      "locShort": "Azuria Kid Club · T1",
+      "photo": "images/loc-kidclub.jpg"
     },
     {
       "tab": "Bữa sáng",
@@ -304,7 +348,8 @@ body.edit .app{box-shadow:0 0 0 2px var(--terra),0 0 60px rgba(2,70,104,.10)}
       ],
       "locVi": "Nhà hàng",
       "locEn": "Restaurant",
-      "locShort": "Nhà hàng"
+      "locShort": "Nhà hàng",
+      "photo": "images/loc-restaurant.jpg"
     },
     {
       "tab": "Đánh giá",
@@ -316,21 +361,18 @@ body.edit .app{box-shadow:0 0 0 2px var(--terra),0 0 60px rgba(2,70,104,.10)}
       "tVi": "Một kỳ nghỉ càng đáng nhớ hơn khi được kể lại.",
       "steps": [
         {
-          "vi": "Mở Google Maps hoặc TripAdvisor.",
-          "en": "Open Google Maps or TripAdvisor."
-        },
-        {
-          "vi": "Tìm khách sạn AMÉRYS Phú Quốc.",
-          "en": "Find AMÉRYS Hotel Phu Quoc."
+          "vi": "Quét mã QR trên Welcome Card để truy cập Google Maps hoặc TripAdvisor.",
+          "en": "Scan the QR code on your Welcome Card to open Google Maps or TripAdvisor."
         },
         {
           "vi": "Chọn số sao theo trải nghiệm thực tế, viết vài dòng cảm nhận và gửi đánh giá.",
           "en": "Choose a rating based on your real experience, write a short review and submit it."
         }
       ],
-      "locVi": "AMÉRYS Boutique Hotel Phu Quoc",
-      "locEn": "AMÉRYS Boutique Hotel Phu Quoc",
-      "locShort": "Online"
+      "locVi": "AMÉRYS Hotel Phu Quoc",
+      "locEn": "",
+      "locShort": "Online",
+      "photo": "images/loc-reception.jpg"
     },
     {
       "tab": "Bưu thiếp",
@@ -356,7 +398,8 @@ body.edit .app{box-shadow:0 0 0 2px var(--terra),0 0 60px rgba(2,70,104,.10)}
       ],
       "locVi": "Sảnh chính",
       "locEn": "Lobby · Memory Corner",
-      "locShort": "Sảnh chính"
+      "locShort": "Sảnh chính",
+      "photo": "images/loc-reception.jpg"
     },
     {
       "tab": "Spa",
@@ -382,12 +425,13 @@ body.edit .app{box-shadow:0 0 0 2px var(--terra),0 0 60px rgba(2,70,104,.10)}
       ],
       "locVi": "LES SENS Spa & Wellness (Tầng 7 · 09:00 – 21:00)",
       "locEn": "LES SENS Spa & Wellness (Floor 7)",
-      "locShort": "LES SENS · T7"
+      "locShort": "LES SENS · T7",
+      "photo": "images/loc-spa.jpg"
     }
   ],
   "ui": {
-    "noteVi": "Hoàn thành xong? Mang Togetherness Passport đến Lễ tân để đóng tem.",
-    "noteEn": "All done? Bring your Togetherness Passport to the Reception to get it stamped.",
+    "noteVi": "Hoàn thành hoạt động và nhận tem tại trạm tương ứng.",
+    "noteEn": "Complete this moment, then collect its stamp at the station.",
     "prevVi": "Trạm trước",
     "prevEn": "Previous",
     "nextVi": "Trạm kế",
@@ -403,7 +447,108 @@ body.edit .app{box-shadow:0 0 0 2px var(--terra),0 0 60px rgba(2,70,104,.10)}
     "listVi": "Chạm vào một trạm để xem hướng dẫn chi tiết.",
     "listEn": "Tap a station for the full guide.",
     "stationWord": "TRẠM",
-    "stationWordEn": "STATION"
+    "stationWordEn": "STATION",
+    "rewardsVi": "Phần thưởng",
+    "rewardsEn": "Rewards"
+  },
+  "rewards": {
+    "headEn": "Collect stamps. Unlock rewards.",
+    "headVi": "Càng trải nghiệm, càng nhiều quà.",
+    "leadEn": "The more you explore, the more you unlock.",
+    "leadVi": "Mỗi cột mốc tem là một phần quà đang chờ Quý khách.",
+    "fineEn": "Terms and conditions apply.",
+    "fineVi": "Điều khoản và điều kiện áp dụng.",
+    "tiers": [
+      {
+        "countVi": "01 TEM",
+        "countEn": "01 STAMP",
+        "num": "01",
+        "titleEn": "A LITTLE TREAT",
+        "titleVi": "QUÀ NHỎ KHỞI ĐỘNG",
+        "color": "#bf704c",
+        "icon": "gift",
+        "leadEn": "Complete your first activity to receive one complimentary coupon:",
+        "leadVi": "Hoàn thành hoạt động đầu tiên để nhận 01 coupon ưu đãi:",
+        "items": [
+          {
+            "en": "Complimentary drink with dinner at STARFISH Bay Restaurant",
+            "vi": "01 thức uống miễn phí khi dùng bữa tối tại Nhà hàng STARFISH Bay",
+            "icon": "cup-soda"
+          },
+          {
+            "en": "Complimentary body scrub with a couple spa package",
+            "vi": "01 liệu trình tẩy tế bào chết toàn thân miễn phí khi sử dụng gói spa dành cho cặp đôi",
+            "icon": "flower-2"
+          },
+          {
+            "en": "Complimentary trial experience at Genki House",
+            "vi": "01 trải nghiệm chăm sóc sức khỏe dành cho người cao tuổi tại Genki House",
+            "icon": "hotel"
+          }
+        ]
+      },
+      {
+        "countVi": "06/08 TEM",
+        "countEn": "06/08 STAMPS",
+        "num": "06",
+        "titleEn": "SPIN & WIN",
+        "titleVi": "QUAY LÀ CÓ QUÀ",
+        "color": "#06859d",
+        "icon": "sparkles",
+        "leadEn": "Complete 6 out of 8 activities to spin the Lucky Wheel.",
+        "leadVi": "Hoàn thành 6/8 hoạt động để tham gia Vòng quay may mắn.",
+        "items": [
+          {
+            "en": "Ami Teddy Bear",
+            "vi": "Gấu bông Ami",
+            "icon": "gift"
+          },
+          {
+            "en": "Ami Charm / Keychain",
+            "vi": "Charm / móc khoá Ami",
+            "icon": "key-round"
+          },
+          {
+            "en": "Hotel Kids’ Amenities Kit",
+            "vi": "Bộ tiện nghi dành cho trẻ em",
+            "icon": "shopping-bag"
+          }
+        ]
+      },
+      {
+        "countVi": "08/08 TEM",
+        "countEn": "08/08 STAMPS",
+        "num": "08",
+        "titleEn": "THE GRAND REWARD",
+        "titleVi": "CHINH PHỤC ĐỦ 8 – SĂN QUÀ LỚN",
+        "color": "#024668",
+        "icon": "landmark",
+        "leadEn": "Complete all 8 activities to enter the Lucky Draw for a chance to win:",
+        "leadVi": "Hoàn thành đủ 8 hoạt động để tham gia Lucky Draw với cơ hội nhận:",
+        "items": [
+          {
+            "en": "1-night complimentary stay at AMÉRYS Boutique Hotel Phu Quoc",
+            "vi": "01 đêm nghỉ miễn phí tại AMÉRYS Boutique Hotel Phu Quoc",
+            "icon": "bed-double"
+          },
+          {
+            "en": "2-night complimentary stay at a Private Palace Hotels & Resorts property",
+            "vi": "02 đêm nghỉ miễn phí tại một khách sạn thuộc hệ thống Private Palace Hotels & Resorts",
+            "icon": "tree-palm"
+          }
+        ],
+        "photos": [
+          {
+            "src": "images/reward-room.jpg",
+            "alt": "AMÉRYS Boutique Hotel Phu Quoc"
+          },
+          {
+            "src": "images/reward-resort.jpg",
+            "alt": "Private Palace Hotels & Resorts"
+          }
+        ]
+      }
+    ]
   }
 }
 </script>
@@ -439,8 +584,9 @@ window.addEventListener("load",measureTb);
 window.addEventListener("resize",measureTb);
 if(window.ResizeObserver){const tbEl=document.querySelector(".topbar");if(tbEl)new ResizeObserver(measureTb).observe(tbEl)}
 if(document.fonts&&document.fonts.ready)document.fonts.ready.then(measureTb);
-const UI_DEF={noteVi:"Hoàn thành xong? Mang Togetherness Passport đến Lễ tân để đóng tem.",noteEn:"All done? Bring your Togetherness Passport to the Reception to get it stamped.",prevVi:"Trạm trước",prevEn:"Previous",nextVi:"Trạm kế",nextEn:"Next",allVi:"Xem tất cả các trạm",allEn:"See all stations",backVi:"Về trang giới thiệu",backEn:"Back to intro",howVi:"Cách tham gia",howEn:"How to join",locVi:"Địa điểm",locEn:"Location",listVi:"Chạm vào một trạm để xem hướng dẫn chi tiết.",listEn:"Tap a station for the full guide.",stationWord:"TRẠM",stationWordEn:"STATION"};
+const UI_DEF={noteVi:"Hoàn thành hoạt động và nhận tem tại trạm tương ứng.",noteEn:"Complete this moment, then collect its stamp at the station.",prevVi:"Trạm trước",prevEn:"Previous",nextVi:"Trạm kế",nextEn:"Next",allVi:"Xem tất cả các trạm",allEn:"See all stations",backVi:"Về trang giới thiệu",backEn:"Back to intro",howVi:"Cách tham gia",howEn:"How to join",locVi:"Địa điểm",locEn:"Location",listVi:"Chạm vào một trạm để xem hướng dẫn chi tiết.",listEn:"Tap a station for the full guide.",stationWord:"TRẠM",stationWordEn:"STATION",rewardsVi:"Phần thưởng",rewardsEn:"Rewards"};
 let U=UI_DEF;
+const EH=p=>state.edit?' contenteditable="true" spellcheck="false" data-html="1" data-path="'+p+'"':'';
 const E=p=>state.edit?' contenteditable="plaintext-only" spellcheck="false" data-path="'+p+'"':'';
 function go(view,i){state.view=view;if(i!==undefined)state.i=i;render();window.scrollTo({top:0})}
 
@@ -458,6 +604,7 @@ function homeView(){const h=C.hero;return '<div class="fade">'+
 function overviewView(){return '<section class="sec" style="animation:riseIn .34s ease-out both">'+
 '<div class="ohead"><h2>'+pad(C.stations.length)+' '+esc(U.stationWord)+'</h2><span>'+pad(C.stations.length)+' '+esc(U.stationWordEn)+'S · ALL ACTIVITIES</span></div>'+
 '<p class="olead"><span'+E("ui.listVi")+'>'+esc(U.listVi)+'</span><br><i'+E("ui.listEn")+'>'+esc(U.listEn)+'</i></p>'+
+'<button class="rewardlink" data-act="go-rewards">'+icon("gift",20)+'<span><span class="r1">'+esc(U.rewardsVi)+'</span><span class="r2">'+esc(U.rewardsEn)+'</span></span><span class="ar">→</span></button>'+
 (state.edit?'<div class="etools"><span class="t">Danh sách trạm</span><button class="esm" data-act="addStation">+ Thêm trạm</button><span class="efield">▲▼ để đổi thứ tự</span></div>':"")+
 '<div class="cards">'+C.stations.map((d,i)=>
  '<div style="position:relative">'+
@@ -475,6 +622,26 @@ function overviewView(){return '<section class="sec" style="animation:riseIn .34
 '<button class="linkish" data-act="go-home">← <span'+E("ui.backVi")+'>'+esc(U.backVi)+'</span><span class="len"'+E("ui.backEn")+'>'+esc(U.backEn)+'</span></button>'+
 '</section>'}
 
+function rewardsView(){const R=C.rewards||{tiers:[]};return '<div class="fade">'+
+'<section class="rhero"><div class="bgwave">'+waveFit("")+'</div>'+
+'<div class="eb">'+esc(U.rewardsVi)+' · '+esc(U.rewardsEn)+'</div>'+
+'<h2'+E("rewards.headVi")+'>'+esc(R.headVi)+'</h2>'+
+'<p class="hen"'+E("rewards.headEn")+'>'+esc(R.headEn)+'</p>'+
+'</section>'+
+'<section class="sec"><div class="tiers">'+(R.tiers||[]).map((t,ti)=>{const rp="rewards.tiers."+ti;return ''+
+'<div class="tier">'+
+'<div class="top" style="color:'+esc(t.color)+'">'+
+'<span class="med"><b>'+esc(t.num)+'</b><i>'+esc((t.countEn||"").replace(/^[\d\/]+\s*/,""))+'</i></span>'+
+'<span style="flex:1;min-width:0"><span class="ten"'+E(rp+".countVi")+'>'+esc(t.countVi)+' · '+esc(t.countEn)+'</span>'+
+'<h3'+E(rp+".titleEn")+'>'+esc(t.titleEn)+'</h3></span></div>'+
+((t.photos&&t.photos.length)?'<div class="frames">'+t.photos.map((p,pi)=>'<div class="frame"><div class="ph">'+icon("image",22)+(p.src?'<img src="'+esc(p.src)+'" alt="'+esc(p.alt||"")+'" loading="lazy" style="position:absolute;inset:0" onerror="this.style.display=\'none\'">':"")+'</div>'+(state.edit?'<div class="etools" style="margin:8px 0 0;padding:7px"><input type="text" data-field="'+rp+'.photos.'+pi+'.src" value="'+esc(p.src)+'" placeholder="images/anh.jpg" style="font:400 11px \'Be Vietnam Pro\',sans-serif;width:100%;padding:6px;border:1px solid var(--line);border-radius:2px"></div>':"")+'</div>').join("")+'</div>':"")+
+'<div class="lead"><p class="len2"'+E(rp+".leadEn")+'>'+esc(t.leadEn)+'</p><p class="lvi"'+E(rp+".leadVi")+'>'+esc(t.leadVi)+'</p></div>'+
+'<ul>'+(t.items||[]).map((it,k)=>'<li><span class="ric" style="color:'+esc(t.color)+'">'+icon(it.icon||"sparkles",16)+'</span><span style="flex:1;min-width:0"><span class="ren"'+E(rp+".items."+k+".en")+'>'+esc(it.en)+'</span><span class="rvi"'+E(rp+".items."+k+".vi")+'>'+esc(it.vi)+'</span></span></li>').join("")+'</ul>'+
+'</div>'}).join("")+'</div>'+
+'<div class="fine"><span'+E("rewards.fineVi")+'>'+esc(R.fineVi)+'</span><i'+E("rewards.fineEn")+'>'+esc(R.fineEn)+'</i></div>'+
+'<button class="linkish" data-act="go-overview">⊞ '+esc(U.allVi)+'<span class="len">'+esc(U.allEn)+'</span></button>'+
+'</section></div>'}
+
 function detailView(){const i=state.i,d=C.stations[i],c=d.color,n=C.stations.length,sp="stations."+i;return ''+
 '<div class="tabs">'+C.stations.map((s,k)=>'<button class="tab'+(k===i?" on":"")+'" data-act="open" data-i="'+k+'">'+icon(s.icon,14)+'<span class="num">'+pad(k+1)+'</span>'+esc(s.tab)+'</button>').join("")+'</div>'+
 '<div class="dband"><div class="bgwave">'+waveFit("")+'</div>'+
@@ -490,12 +657,13 @@ function detailView(){const i=state.i,d=C.stations[i],c=d.color,n=C.stations.len
  '</div>':"")+
 '<div class="tagline"><p class="ten"'+E(sp+".tEn")+'>'+esc(d.tEn)+'</p><p class="tvi"'+E(sp+".tVi")+'>'+esc(d.tVi)+'</p></div>'+
 '<div class="kicker"><span'+E("ui.howVi")+'>'+esc(U.howVi)+'</span> · <span'+E("ui.howEn")+'>'+esc(U.howEn)+'</span></div>'+
-'<div style="margin-bottom:26px">'+d.steps.map((s,k)=>'<div class="step"><div class="n">'+pad(k+1)+'</div><div style="flex:1"><div class="vi"'+E(sp+".steps."+k+".vi")+'>'+esc(s.vi)+'</div><div class="en"'+E(sp+".steps."+k+".en")+'>'+esc(s.en)+'</div></div>'+(state.edit?'<button class="esm warn" data-act="delStep" data-k="'+k+'" title="Xoá bước">✕</button>':"")+'</div>').join("")+
+'<div style="margin-bottom:26px">'+d.steps.map((s,k)=>'<div class="step"><div class="n">'+pad(k+1)+'</div><div style="flex:1"><div class="vi"'+EH(sp+".steps."+k+".vi")+'>'+s.vi+'</div><div class="en"'+EH(sp+".steps."+k+".en")+'>'+s.en+'</div></div>'+(state.edit?'<button class="esm warn" data-act="delStep" data-k="'+k+'" title="Xoá bước">✕</button>':"")+'</div>').join("")+
 (state.edit?'<div class="etools" style="margin:14px 0 0"><button class="esm" data-act="addStep">+ Thêm bước</button></div>':"")+'</div>'+
 '<div class="loc"><div class="lab"><span'+E("ui.locVi")+'>'+esc(U.locVi)+'</span> · <span'+E("ui.locEn")+'>'+esc(U.locEn)+'</span></div><div class="vi"'+E(sp+".locVi")+'>'+esc(d.locVi)+'</div><div class="en"'+E(sp+".locEn")+'>'+esc(d.locEn)+'</div>'+
-(state.edit?'<div class="etools" style="margin:13px 0 0"><span class="efield">Nhãn ngắn <input type="text" data-field="'+sp+'.locShort" value="'+esc(d.locShort)+'"></span></div>':"")+'</div>'+
+(d.photo?'<div class="locpic"><img src="'+esc(d.photo)+'" alt="'+esc(d.locVi)+'" loading="lazy" decoding="async" onerror="this.parentNode.remove()"></div>':'')+(state.edit?'<div class="etools" style="margin:13px 0 0"><span class="efield">Nhãn ngắn <input type="text" data-field="'+sp+'.locShort" value="'+esc(d.locShort)+'"></span><span class="efield">Ảnh địa điểm <input type="text" data-field="'+sp+'.photo" value="'+esc(d.photo||"")+'" placeholder="images/loc-lobby.jpg"></span></div>':"")+'</div>'+
 '<div class="note"><span class="nvi"'+E("ui.noteVi")+'>'+esc(U.noteVi)+'</span><span class="nen"'+E("ui.noteEn")+'>'+esc(U.noteEn)+'</span></div>'+
 '<div class="nav"><button data-act="open" data-i="'+((i+n-1)%n)+'"><span class="bvi">← '+esc(U.prevVi)+'</span><span class="ben">'+esc(U.prevEn)+'</span></button><button data-act="open" data-i="'+((i+1)%n)+'"><span class="bvi">'+esc(U.nextVi)+' →</span><span class="ben">'+esc(U.nextEn)+'</span></button></div>'+
+'<button class="rewardlink" data-act="go-rewards">'+icon("gift",20)+'<span><span class="r1">'+esc(U.rewardsVi)+'</span><span class="r2">'+esc(U.rewardsEn)+'</span></span><span class="ar">→</span></button>'+
 '<button class="linkish" data-act="go-overview">⊞ '+esc(U.allVi)+' ('+pad(n)+')<span class="len">'+esc(U.allEn)+'</span></button>'+
 '</section>'}
 
@@ -518,7 +686,7 @@ document.addEventListener("input",e=>{
   const t=e.target;
   if(t.dataset&&t.dataset.path){setPath(t.dataset.path,t.dataset.html?t.innerHTML:t.textContent);return}
   if(t.dataset&&t.dataset.field){setPath(t.dataset.field,t.value);
-    if(/\.(color|icon|tab)$/.test(t.dataset.field))render();return}
+    if(/\.(color|icon|tab|photo)$/.test(t.dataset.field))render();return}
   if(t.dataset&&t.dataset.theme){C.theme[t.dataset.theme]=t.value;applyTheme();saveDraft()}
 });
 document.addEventListener("click",e=>{
@@ -526,6 +694,7 @@ document.addEventListener("click",e=>{
   const a=b.dataset.act,i=+b.dataset.i,k=+b.dataset.k,s=C.stations[state.i];
   if(a==="open"){go("detail",i);return}
   if(a==="go-overview"){go("overview");return}
+  if(a==="go-rewards"){go("rewards");return}
   if(a==="go-home"){go("home");return}
   if(a==="addStation"){C.stations.push({tab:"Trạm mới",en:"New station",vi:"TRẠM MỚI",icon:"sparkles",color:C.theme.teal,tEn:"Short line in English.",tVi:"Một câu giới thiệu ngắn.",steps:[{vi:"Bước đầu tiên.",en:"First step."}],locVi:"Địa điểm",locEn:"Location",locShort:"Địa điểm"});saveDraft();go("detail",C.stations.length-1);return}
   if(a==="delStation"){if(confirm("Xoá trạm "+pad(i+1)+"?")){C.stations.splice(i,1);if(state.i>=C.stations.length)state.i=Math.max(0,C.stations.length-1);saveDraft();render()}return}
@@ -544,12 +713,12 @@ function render(){
   document.body.classList.toggle("home",state.view==="home");
   document.getElementById("foot").style.display=state.view==="home"?"none":"flex";
   document.getElementById("view").innerHTML =
-    state.view==="home"?homeView():state.view==="overview"?overviewView():detailView();
+    state.view==="home"?homeView():state.view==="overview"?overviewView():state.view==="rewards"?rewardsView():detailView();
   editBar();
   const tabs=document.querySelector(".tabs"),on=tabs&&tabs.querySelector(".tab.on");
   if(tabs&&on)tabs.scrollLeft=Math.max(0,on.offsetLeft-20);
   if(!state.edit){
-    const h=state.view==="detail"?("#tram-"+pad(state.i+1)):(state.view==="overview"?"#tram":"");
+    const h=state.view==="detail"?("#tram-"+pad(state.i+1)):state.view==="overview"?"#tram":state.view==="rewards"?"#qua":"";
     history.replaceState(null,"",location.pathname+h);
   }
 }
@@ -562,6 +731,7 @@ function render(){
   if(state.edit){try{const d=localStorage.getItem(DRAFT_KEY);if(d&&confirm("Có bản nháp chưa đăng trên máy này. Mở lại bản nháp?"))C=JSON.parse(d)}catch(e){}}
   const m=hash.match(/#tram-(\d+)/);
   if(m){state.view="detail";state.i=Math.min(Math.max(+m[1]-1,0),C.stations.length-1)}
+  else if(hash.indexOf("qua")>-1||hash.indexOf("reward")>-1)state.view="rewards";
   else if(hash.indexOf("tram")>-1)state.view="overview";
   render();
 })();

@@ -41,7 +41,15 @@ Mở `content.json` trên GitHub, bấm ✏️, sửa phần trong dấu ngoặc
 Lưu ý: giữ nguyên dấu phẩy, ngoặc kép và ngoặc vuông. Thiếu một dấu là trang không đọc được nội dung
 (khi đó trang tự dùng bản dự phòng nhúng trong `index.html`).
 
-## Ảnh từng trạm
+## Ảnh địa điểm (bắt buộc upload thư mục images/)
+
+Mỗi trạm có một ảnh địa điểm nằm trong thẻ "Địa điểm · Location". Các file:
+`loc-lobby.jpg` · `loc-sunset.jpg` · `loc-kidclub.jpg` · `loc-restaurant.jpg` · `loc-reception.jpg` · `loc-spa.jpg`.
+Trạm 3+4 dùng chung ảnh Kid Club, trạm 6+7 dùng chung ảnh sảnh. Đổi ảnh: thay file cùng tên,
+hoặc sửa đường dẫn ở ô "Ảnh địa điểm" trong `#edit` / trường `photo` trong `content.json`.
+Ảnh chuẩn 3:2 (960×640). Thiếu ảnh nào thì khối ảnh đó tự ẩn.
+
+## Ảnh từng trạm (cũ — không còn dùng)
 
 Upload vào `images/` rồi ghi tên file vào ô Ảnh (hoặc `image` trong JSON).
 

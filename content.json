@@ -14,7 +14,7 @@
     "passport": "Togetherness Passport"
   },
   "hero": {
-    "eyebrow": "Hướng dẫn tham gia",
+    "eyebrow": "",
     "titleTop": "THE STAMP",
     "titleBottom": "PLAYBOOK",
     "en": "At each milestone, present your Togetherness Passport at the Reception to unlock surprise rewards for you and your teammates.",
@@ -37,13 +37,14 @@
           "en": "Take a photo together."
         },
         {
-          "vi": "Đăng ảnh lên Facebook và tag fanpage @AMÉRYS Hotel Phu Quoc kèm hashtag #AmerysPhuQuoc",
+          "vi": "Đăng ảnh lên Facebook và tag fanpage <u>@AMÉRYS Hotel Phu Quoc</u> kèm hashtag <b style=\"color:#8E0B20\">#AmerysPhuQuoc</b>",
           "en": "Post your photo on Facebook, tag @AMÉRYS Hotel Phu Quoc, and use #AmerysPhuQuoc"
         }
       ],
-      "locVi": "AMÉRYS Boutique Hotel Phu Quoc — Sảnh chính hoặc bất kỳ đâu trong khách sạn",
+      "locVi": "AMÉRYS Hotel Phu Quoc",
       "locEn": "Main lobby or anywhere in the hotel",
-      "locShort": "Toàn khách sạn"
+      "locShort": "Toàn khách sạn",
+      "photo": "images/loc-lobby.jpg"
     },
     {
       "tab": "Sunset",
@@ -69,7 +70,8 @@
       ],
       "locVi": "Góc ngắm hoàng hôn bạn yêu thích",
       "locEn": "Your favorite sunset spot",
-      "locShort": "Ngoài trời"
+      "locShort": "Ngoài trời",
+      "photo": "images/loc-sunset.jpg"
     },
     {
       "tab": "Danh hoạ",
@@ -95,7 +97,8 @@
       ],
       "locVi": "Khu vui chơi trẻ em Azuria (Tầng 1, 08:00–20:30)",
       "locEn": "Azuria Kid Club (Floor 1, 08:00–20:30)",
-      "locShort": "Azuria Kid Club · T1"
+      "locShort": "Azuria Kid Club · T1",
+      "photo": "images/loc-kidclub-entrance.jpg"
     },
     {
       "tab": "Lâu đài cát",
@@ -119,9 +122,10 @@
           "en": "Take a photo together with your finished castle."
         }
       ],
-      "locVi": "Khu vui chơi trẻ em Azuria (Tầng 1, 08:00–20:30)",
+      "locVi": "Azuria Kid Club",
       "locEn": "Azuria Kid Club (1st Floor, 08:00–20:30)",
-      "locShort": "Azuria Kid Club · T1"
+      "locShort": "Azuria Kid Club · T1",
+      "photo": "images/loc-kidclub.jpg"
     },
     {
       "tab": "Bữa sáng",
@@ -143,7 +147,8 @@
       ],
       "locVi": "Nhà hàng",
       "locEn": "Restaurant",
-      "locShort": "Nhà hàng"
+      "locShort": "Nhà hàng",
+      "photo": "images/loc-restaurant.jpg"
     },
     {
       "tab": "Đánh giá",
@@ -155,21 +160,18 @@
       "tVi": "Một kỳ nghỉ càng đáng nhớ hơn khi được kể lại.",
       "steps": [
         {
-          "vi": "Mở Google Maps hoặc TripAdvisor.",
-          "en": "Open Google Maps or TripAdvisor."
-        },
-        {
-          "vi": "Tìm khách sạn AMÉRYS Phú Quốc.",
-          "en": "Find AMÉRYS Hotel Phu Quoc."
+          "vi": "Quét mã QR trên Welcome Card để truy cập Google Maps hoặc TripAdvisor.",
+          "en": "Scan the QR code on your Welcome Card to open Google Maps or TripAdvisor."
         },
         {
           "vi": "Chọn số sao theo trải nghiệm thực tế, viết vài dòng cảm nhận và gửi đánh giá.",
           "en": "Choose a rating based on your real experience, write a short review and submit it."
         }
       ],
-      "locVi": "AMÉRYS Boutique Hotel Phu Quoc",
-      "locEn": "AMÉRYS Boutique Hotel Phu Quoc",
-      "locShort": "Online"
+      "locVi": "AMÉRYS Hotel Phu Quoc",
+      "locEn": "",
+      "locShort": "Online",
+      "photo": "images/loc-reception.jpg"
     },
     {
       "tab": "Bưu thiếp",
@@ -195,7 +197,8 @@
       ],
       "locVi": "Sảnh chính",
       "locEn": "Lobby · Memory Corner",
-      "locShort": "Sảnh chính"
+      "locShort": "Sảnh chính",
+      "photo": "images/loc-reception.jpg"
     },
     {
       "tab": "Spa",
@@ -221,12 +224,13 @@
       ],
       "locVi": "LES SENS Spa & Wellness (Tầng 7 · 09:00 – 21:00)",
       "locEn": "LES SENS Spa & Wellness (Floor 7)",
-      "locShort": "LES SENS · T7"
+      "locShort": "LES SENS · T7",
+      "photo": "images/loc-spa.jpg"
     }
   ],
   "ui": {
-    "noteVi": "Hoàn thành xong? Mang Togetherness Passport đến Lễ tân để đóng tem.",
-    "noteEn": "All done? Bring your Togetherness Passport to the Reception to get it stamped.",
+    "noteVi": "Hoàn thành hoạt động và nhận tem tại trạm tương ứng.",
+    "noteEn": "Complete this moment, then collect its stamp at the station.",
     "prevVi": "Trạm trước",
     "prevEn": "Previous",
     "nextVi": "Trạm kế",
@@ -242,6 +246,107 @@
     "listVi": "Chạm vào một trạm để xem hướng dẫn chi tiết.",
     "listEn": "Tap a station for the full guide.",
     "stationWord": "TRẠM",
-    "stationWordEn": "STATION"
+    "stationWordEn": "STATION",
+    "rewardsVi": "Phần thưởng",
+    "rewardsEn": "Rewards"
+  },
+  "rewards": {
+    "headEn": "Collect stamps. Unlock rewards.",
+    "headVi": "Càng trải nghiệm, càng nhiều quà.",
+    "leadEn": "The more you explore, the more you unlock.",
+    "leadVi": "Mỗi cột mốc tem là một phần quà đang chờ Quý khách.",
+    "fineEn": "Terms and conditions apply.",
+    "fineVi": "Điều khoản và điều kiện áp dụng.",
+    "tiers": [
+      {
+        "countVi": "01 TEM",
+        "countEn": "01 STAMP",
+        "num": "01",
+        "titleEn": "A LITTLE TREAT",
+        "titleVi": "QUÀ NHỎ KHỞI ĐỘNG",
+        "color": "#bf704c",
+        "icon": "gift",
+        "leadEn": "Complete your first activity to receive one complimentary coupon:",
+        "leadVi": "Hoàn thành hoạt động đầu tiên để nhận 01 coupon ưu đãi:",
+        "items": [
+          {
+            "en": "Complimentary drink with dinner at STARFISH Bay Restaurant",
+            "vi": "01 thức uống miễn phí khi dùng bữa tối tại Nhà hàng STARFISH Bay",
+            "icon": "cup-soda"
+          },
+          {
+            "en": "Complimentary body scrub with a couple spa package",
+            "vi": "01 liệu trình tẩy tế bào chết toàn thân miễn phí khi sử dụng gói spa dành cho cặp đôi",
+            "icon": "flower-2"
+          },
+          {
+            "en": "Complimentary trial experience at Genki House",
+            "vi": "01 trải nghiệm chăm sóc sức khỏe dành cho người cao tuổi tại Genki House",
+            "icon": "hotel"
+          }
+        ]
+      },
+      {
+        "countVi": "06/08 TEM",
+        "countEn": "06/08 STAMPS",
+        "num": "06",
+        "titleEn": "SPIN & WIN",
+        "titleVi": "QUAY LÀ CÓ QUÀ",
+        "color": "#06859d",
+        "icon": "sparkles",
+        "leadEn": "Complete 6 out of 8 activities to spin the Lucky Wheel.",
+        "leadVi": "Hoàn thành 6/8 hoạt động để tham gia Vòng quay may mắn.",
+        "items": [
+          {
+            "en": "Ami Teddy Bear",
+            "vi": "Gấu bông Ami",
+            "icon": "gift"
+          },
+          {
+            "en": "Ami Charm / Keychain",
+            "vi": "Charm / móc khoá Ami",
+            "icon": "key-round"
+          },
+          {
+            "en": "Hotel Kids’ Amenities Kit",
+            "vi": "Bộ tiện nghi dành cho trẻ em",
+            "icon": "shopping-bag"
+          }
+        ]
+      },
+      {
+        "countVi": "08/08 TEM",
+        "countEn": "08/08 STAMPS",
+        "num": "08",
+        "titleEn": "THE GRAND REWARD",
+        "titleVi": "CHINH PHỤC ĐỦ 8 – SĂN QUÀ LỚN",
+        "color": "#024668",
+        "icon": "landmark",
+        "leadEn": "Complete all 8 activities to enter the Lucky Draw for a chance to win:",
+        "leadVi": "Hoàn thành đủ 8 hoạt động để tham gia Lucky Draw với cơ hội nhận:",
+        "items": [
+          {
+            "en": "1-night complimentary stay at AMÉRYS Boutique Hotel Phu Quoc",
+            "vi": "01 đêm nghỉ miễn phí tại AMÉRYS Boutique Hotel Phu Quoc",
+            "icon": "bed-double"
+          },
+          {
+            "en": "2-night complimentary stay at a Private Palace Hotels & Resorts property",
+            "vi": "02 đêm nghỉ miễn phí tại một khách sạn thuộc hệ thống Private Palace Hotels & Resorts",
+            "icon": "tree-palm"
+          }
+        ],
+        "photos": [
+          {
+            "src": "images/reward-room.jpg",
+            "alt": "AMÉRYS Boutique Hotel Phu Quoc"
+          },
+          {
+            "src": "images/reward-resort.jpg",
+            "alt": "Private Palace Hotels & Resorts"
+          }
+        ]
+      }
+    ]
   }
 }
