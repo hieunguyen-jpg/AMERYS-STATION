@@ -1,0 +1,228 @@
+{
+  "theme": {
+    "navy": "#024668",
+    "teal": "#06859d",
+    "aqua": "#b4d5d8",
+    "sand": "#eaddca",
+    "terra": "#bf704c",
+    "paper": "#fbf8f3"
+  },
+  "brand": {
+    "name": "AMÉRYS",
+    "place": "PHU QUOC",
+    "footer": "FAMILY BOUTIQUE HOTEL · PHU QUOC",
+    "passport": "Togetherness Passport"
+  },
+  "hero": {
+    "eyebrow": "Hướng dẫn tham gia",
+    "titleTop": "THE STAMP",
+    "titleBottom": "PLAYBOOK",
+    "en": "At each milestone, present your Togetherness Passport at the Reception to unlock surprise rewards for you and your teammates.",
+    "vi": "Sau mỗi chặng, hãy mang Togetherness Passport đến Lễ tân để đổi lấy những món quà đặc biệt dành tặng bạn và “đồng đội”.",
+    "cta": "Xem tất cả hoạt động",
+    "ctaSub": "Explore all activities",
+    "note": "Hoàn thành xong? Mang <strong>Togetherness Passport</strong> đến Lễ tân để đóng tem."
+  },
+  "stations": [
+    {
+      "tab": "Say hi",
+      "en": "Check-in on social media",
+      "vi": "NHÀ MÌNH SAY HI!",
+      "icon": "camera",
+      "color": "#06859d",
+      "tEn": "Say hi to your first AMÉRYS memory together.",
+      "tVi": "Cả nhà lên hình - hành trình tích tem bắt đầu!",
+      "steps": [
+        {
+          "vi": "Chụp một bức ảnh cùng nhau.",
+          "en": "Take a photo together."
+        },
+        {
+          "vi": "Đăng ảnh lên Facebook và tag fanpage @AMÉRYS Hotel Phu Quoc kèm hashtag #AmerysPhuQuoc",
+          "en": "Post your photo on Facebook, tag @AMÉRYS Hotel Phu Quoc, and use #AmerysPhuQuoc"
+        }
+      ],
+      "locVi": "AMÉRYS Boutique Hotel Phu Quoc — Sảnh chính hoặc bất kỳ đâu trong khách sạn",
+      "locEn": "Main lobby or anywhere in the hotel",
+      "locShort": "Toàn khách sạn"
+    },
+    {
+      "tab": "Sunset",
+      "en": "Sunset Together",
+      "vi": "BẠN MUỐN HẸN HÒ... VỚI SUNSET?",
+      "icon": "sunset",
+      "color": "#bf704c",
+      "tEn": "Pick your favorite sunset spot and make a date with the sky.",
+      "tVi": "Chọn một góc thật đẹp và hẹn nhau lúc mặt trời chạm biển.",
+      "steps": [
+        {
+          "vi": "Kiểm tra khung giờ hoàng hôn trong ngày.",
+          "en": "Check today's sunset time."
+        },
+        {
+          "vi": "Cùng nhau ngắm hoàng hôn.",
+          "en": "Enjoy the sunset together."
+        },
+        {
+          "vi": "Chụp lại khoảnh khắc bên nhau.",
+          "en": "Take a photo of the moment."
+        }
+      ],
+      "locVi": "Góc ngắm hoàng hôn bạn yêu thích",
+      "locEn": "Your favorite sunset spot",
+      "locShort": "Ngoài trời"
+    },
+    {
+      "tab": "Danh hoạ",
+      "en": "Create Together",
+      "vi": "THÁCH THỨC DANH HỌA",
+      "icon": "palette",
+      "color": "#024668",
+      "tEn": "One table, many colors, one little masterpiece together.",
+      "tVi": "Mỗi người góp một nét, cả nhà cùng tạo nên một “kiệt tác”.",
+      "steps": [
+        {
+          "vi": "Đến Khu vui chơi trẻ em Azuria trong khung giờ hoạt động.",
+          "en": "Visit Azuria Kid Club during opening hours."
+        },
+        {
+          "vi": "Dùng vật liệu được chuẩn bị sẵn để cùng hoàn thành một tác phẩm.",
+          "en": "Use the materials provided to create one artwork together."
+        },
+        {
+          "vi": "Chụp một bức ảnh cùng tác phẩm sau khi hoàn thành.",
+          "en": "Take a photo together with your finished artwork."
+        }
+      ],
+      "locVi": "Khu vui chơi trẻ em Azuria (Tầng 1, 08:00–20:30)",
+      "locEn": "Azuria Kid Club (Floor 1, 08:00–20:30)",
+      "locShort": "Azuria Kid Club · T1"
+    },
+    {
+      "tab": "Lâu đài cát",
+      "en": "Build Our Family Castle",
+      "vi": "CUỘC ĐUA ĐẦY CÁT",
+      "icon": "castle",
+      "color": "#06859d",
+      "tEn": "Buckets ready. Shovels ready. Let the castle challenge begin!",
+      "tVi": "Xô sẵn sàng. Xẻng sẵn sàng. Cả nhà cùng xây lâu đài thôi nào!",
+      "steps": [
+        {
+          "vi": "Đến khu vực cát và chọn dụng cụ có sẵn.",
+          "en": "Head to the sand play area and pick up the tools provided."
+        },
+        {
+          "vi": "Cùng nhau xây lâu đài cát.",
+          "en": "Build your castle together."
+        },
+        {
+          "vi": "Chụp một bức ảnh cùng lâu đài sau khi hoàn thành.",
+          "en": "Take a photo together with your finished castle."
+        }
+      ],
+      "locVi": "Khu vui chơi trẻ em Azuria (Tầng 1, 08:00–20:30)",
+      "locEn": "Azuria Kid Club (1st Floor, 08:00–20:30)",
+      "locShort": "Azuria Kid Club · T1"
+    },
+    {
+      "tab": "Bữa sáng",
+      "en": "Family Breakfast",
+      "vi": "“MASTER” CHÉN",
+      "icon": "coffee",
+      "color": "#bf704c",
+      "tEn": "No need to be a MasterChef - just master the breakfast table.",
+      "tVi": "Không cần làm MasterChef - chỉ cần cả nhà “chén” thật vui!",
+      "steps": [
+        {
+          "vi": "Cùng nhau dùng bữa sáng.",
+          "en": "Enjoy breakfast with your partner."
+        },
+        {
+          "vi": "Chụp lại bữa ăn sáng cùng nhau.",
+          "en": "Take a photo of your breakfast."
+        }
+      ],
+      "locVi": "Nhà hàng",
+      "locEn": "Restaurant",
+      "locShort": "Nhà hàng"
+    },
+    {
+      "tab": "Đánh giá",
+      "en": "Share Your Stay",
+      "vi": "KÝ ỨC VUI VẺ",
+      "icon": "star",
+      "color": "#024668",
+      "tEn": "A good memory is even better when it gets shared.",
+      "tVi": "Một kỳ nghỉ càng đáng nhớ hơn khi được kể lại.",
+      "steps": [
+        {
+          "vi": "Mở Google Maps hoặc TripAdvisor.",
+          "en": "Open Google Maps or TripAdvisor."
+        },
+        {
+          "vi": "Tìm khách sạn AMÉRYS Phú Quốc.",
+          "en": "Find AMÉRYS Hotel Phu Quoc."
+        },
+        {
+          "vi": "Chọn số sao theo trải nghiệm thực tế, viết vài dòng cảm nhận và gửi đánh giá.",
+          "en": "Choose a rating based on your real experience, write a short review and submit it."
+        }
+      ],
+      "locVi": "AMÉRYS Boutique Hotel Phu Quoc",
+      "locEn": "AMÉRYS Boutique Hotel Phu Quoc",
+      "locShort": "Online"
+    },
+    {
+      "tab": "Bưu thiếp",
+      "en": "Postcard to your beloved",
+      "vi": "“DEAR” ĐI CHỜ CHI",
+      "icon": "mail",
+      "color": "#06859d",
+      "tEn": "Dear someone, a little piece of Phu Quoc is on its way.",
+      "tVi": "Có lời muốn gửi thì “Dear” đi chờ chi!",
+      "steps": [
+        {
+          "vi": "Nhận một tấm bưu thiếp AMÉRYS tại Memory Corner.",
+          "en": "Pick up an AMÉRYS postcard at the Memory Corner."
+        },
+        {
+          "vi": "Viết lời nhắn và địa chỉ người nhận.",
+          "en": "Write your message and the recipient's address."
+        },
+        {
+          "vi": "Bỏ bưu thiếp vào hòm thư. AMÉRYS sẽ giúp bạn gửi đi.",
+          "en": "Place it in the mail box. AMÉRYS will help send it for you."
+        }
+      ],
+      "locVi": "Sảnh chính",
+      "locEn": "Lobby · Memory Corner",
+      "locShort": "Sảnh chính"
+    },
+    {
+      "tab": "Spa",
+      "en": "Spa Experience",
+      "vi": "ƠN GIỜI, SPA ĐÂY RỒI!",
+      "icon": "flower-2",
+      "color": "#bf704c",
+      "tEn": "Your only mission here: relax.",
+      "tVi": "Nhiệm vụ duy nhất ở trạm này: thư giãn.",
+      "steps": [
+        {
+          "vi": "Trải nghiệm một dịch vụ bất kỳ tại LES SENS Spa & Wellness.",
+          "en": "Enjoy an experience at LES SENS Spa & Wellness."
+        },
+        {
+          "vi": "Chia sẻ đánh giá về trải nghiệm dịch vụ trên Google.",
+          "en": "Leave a review of LES SENS Spa & Wellness on Google."
+        },
+        {
+          "vi": "Chụp thêm một tấm hình kỷ niệm để nhận thêm +1 tem.",
+          "en": "Take a keepsake photo if you'd like to collect an extra stamp."
+        }
+      ],
+      "locVi": "LES SENS Spa & Wellness (Tầng 7 · 09:00 – 21:00)",
+      "locEn": "LES SENS Spa & Wellness (Floor 7)",
+      "locShort": "LES SENS · T7"
+    }
+  ]
+}
