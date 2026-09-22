@@ -150,8 +150,8 @@ footer .flogo{width:clamp(104px,28vw,138px);height:auto}
 .tier li .rvi{display:block;font-size:12px;font-style:italic;line-height:1.45;color:var(--muted);margin-top:3px}
 .fine{margin-top:22px;text-align:center;font-size:10.5px;color:#9aa8ae;line-height:1.7}
 .fine i{display:block;font-size:10px}
-.rewardlink{display:flex;align-items:center;gap:13px;width:100%;margin-top:14px;padding:14px 16px;background:var(--navy);color:var(--paper);border:0;border-radius:3px;cursor:pointer;text-align:left;min-height:58px;transition:background .18s,color .18s}
-.rewardlink:hover{background:var(--terra)}
+.rewardlink{display:flex;align-items:center;gap:13px;width:100%;min-height:84px;margin:0 0 18px;padding:16px;background:#9E2121;color:var(--paper);border:0;border-radius:3px;cursor:pointer;text-align:left;min-height:58px;transition:background .18s,color .18s}
+.rewardlink:hover{background:var(--navy)}
 .rewardlink .ri{flex:none}
 .rewardlink .r1{display:block;font-size:13.5px;font-weight:500;letter-spacing:.03em}
 .rewardlink .r2{display:block;font-size:10.5px;font-style:italic;opacity:.8;margin-top:2px}
@@ -449,7 +449,7 @@ body.edit .app{box-shadow:0 0 0 2px var(--terra),0 0 60px rgba(2,70,104,.10)}
     "stationWord": "TRẠM",
     "stationWordEn": "STATION",
     "rewardsVi": "Phần thưởng",
-    "rewardsEn": "Rewards"
+    "rewardsEn": "COLLECT STAMPS, UNLOCK REWARDS"
   },
   "rewards": {
     "headEn": "Collect stamps. Unlock rewards.",
@@ -584,7 +584,7 @@ window.addEventListener("load",measureTb);
 window.addEventListener("resize",measureTb);
 if(window.ResizeObserver){const tbEl=document.querySelector(".topbar");if(tbEl)new ResizeObserver(measureTb).observe(tbEl)}
 if(document.fonts&&document.fonts.ready)document.fonts.ready.then(measureTb);
-const UI_DEF={noteVi:"Hoàn thành hoạt động và nhận tem tại trạm tương ứng.",noteEn:"Complete this moment, then collect its stamp at the station.",prevVi:"Trạm trước",prevEn:"Previous",nextVi:"Trạm kế",nextEn:"Next",allVi:"Xem tất cả các trạm",allEn:"See all stations",backVi:"Về trang giới thiệu",backEn:"Back to intro",howVi:"Cách tham gia",howEn:"How to join",locVi:"Địa điểm",locEn:"Location",listVi:"Chạm vào một trạm để xem hướng dẫn chi tiết.",listEn:"Tap a station for the full guide.",stationWord:"TRẠM",stationWordEn:"STATION",rewardsVi:"Phần thưởng",rewardsEn:"Rewards"};
+const UI_DEF={noteVi:"Hoàn thành hoạt động và nhận tem tại trạm tương ứng.",noteEn:"Complete this moment, then collect its stamp at the station.",prevVi:"Trạm trước",prevEn:"Previous",nextVi:"Trạm kế",nextEn:"Next",allVi:"Xem tất cả các trạm",allEn:"See all stations",backVi:"Về trang giới thiệu",backEn:"Back to intro",howVi:"Cách tham gia",howEn:"How to join",locVi:"Địa điểm",locEn:"Location",listVi:"Chạm vào một trạm để xem hướng dẫn chi tiết.",listEn:"Tap a station for the full guide.",stationWord:"TRẠM",stationWordEn:"STATION",rewardsVi:"Phần thưởng",rewardsEn:"COLLECT STAMPS, UNLOCK REWARDS"};
 let U=UI_DEF;
 const EH=p=>state.edit?' contenteditable="true" spellcheck="false" data-html="1" data-path="'+p+'"':'';
 const E=p=>state.edit?' contenteditable="plaintext-only" spellcheck="false" data-path="'+p+'"':'';
@@ -602,9 +602,9 @@ function homeView(){const h=C.hero;return '<div class="fade">'+
 '</div>'}
 
 function overviewView(){return '<section class="sec" style="animation:riseIn .34s ease-out both">'+
+'<button class="rewardlink" data-act="go-rewards">'+icon("gift",20)+'<span><span class="r1">'+esc(U.rewardsVi)+'</span><span class="r2">'+esc(U.rewardsEn)+'</span></span><span class="ar">→</span></button>'+
 '<div class="ohead"><h2>'+pad(C.stations.length)+' '+esc(U.stationWord)+'</h2><span>'+pad(C.stations.length)+' '+esc(U.stationWordEn)+'S · ALL ACTIVITIES</span></div>'+
 '<p class="olead"><span'+E("ui.listVi")+'>'+esc(U.listVi)+'</span><br><i'+E("ui.listEn")+'>'+esc(U.listEn)+'</i></p>'+
-'<button class="rewardlink" data-act="go-rewards">'+icon("gift",20)+'<span><span class="r1">'+esc(U.rewardsVi)+'</span><span class="r2">'+esc(U.rewardsEn)+'</span></span><span class="ar">→</span></button>'+
 (state.edit?'<div class="etools"><span class="t">Danh sách trạm</span><button class="esm" data-act="addStation">+ Thêm trạm</button><span class="efield">▲▼ để đổi thứ tự</span></div>':"")+
 '<div class="cards">'+C.stations.map((d,i)=>
  '<div style="position:relative">'+
@@ -663,7 +663,6 @@ function detailView(){const i=state.i,d=C.stations[i],c=d.color,n=C.stations.len
 (d.photo?'<div class="locpic"><img src="'+esc(d.photo)+'" alt="'+esc(d.locVi)+'" loading="lazy" decoding="async" onerror="this.parentNode.remove()"></div>':'')+(state.edit?'<div class="etools" style="margin:13px 0 0"><span class="efield">Nhãn ngắn <input type="text" data-field="'+sp+'.locShort" value="'+esc(d.locShort)+'"></span><span class="efield">Ảnh địa điểm <input type="text" data-field="'+sp+'.photo" value="'+esc(d.photo||"")+'" placeholder="images/loc-lobby.jpg"></span></div>':"")+'</div>'+
 '<div class="note"><span class="nvi"'+E("ui.noteVi")+'>'+esc(U.noteVi)+'</span><span class="nen"'+E("ui.noteEn")+'>'+esc(U.noteEn)+'</span></div>'+
 '<div class="nav"><button data-act="open" data-i="'+((i+n-1)%n)+'"><span class="bvi">← '+esc(U.prevVi)+'</span><span class="ben">'+esc(U.prevEn)+'</span></button><button data-act="open" data-i="'+((i+1)%n)+'"><span class="bvi">'+esc(U.nextVi)+' →</span><span class="ben">'+esc(U.nextEn)+'</span></button></div>'+
-'<button class="rewardlink" data-act="go-rewards">'+icon("gift",20)+'<span><span class="r1">'+esc(U.rewardsVi)+'</span><span class="r2">'+esc(U.rewardsEn)+'</span></span><span class="ar">→</span></button>'+
 '<button class="linkish" data-act="go-overview">⊞ '+esc(U.allVi)+' ('+pad(n)+')<span class="len">'+esc(U.allEn)+'</span></button>'+
 '</section>'}
 
