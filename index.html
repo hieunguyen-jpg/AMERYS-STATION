@@ -14,7 +14,7 @@
 <style>
 :root{--navy:#024668;--teal:#06859d;--aqua:#b4d5d8;--sand:#eaddca;--terra:#bf704c;--paper:#fbf8f3;--muted:#7a8a93;--line:rgba(2,70,104,.12);--gut:clamp(16px,5vw,24px);--tb:64px}
 *{box-sizing:border-box}
-html{-webkit-text-size-adjust:100%;overflow-x:clip}
+html{-webkit-text-size-adjust:100%;overflow-x:clip;scroll-padding-top:calc(var(--tb) + 52px)}
 html,body{margin:0;padding:0;background:#eef4f4;-webkit-font-smoothing:antialiased}
 body{font-family:'Be Vietnam Pro',system-ui,sans-serif;color:var(--navy)}
 a{color:var(--teal);text-decoration:none}
@@ -67,7 +67,7 @@ h1 b{font-weight:500}
 .card .locline{display:flex;align-items:center;gap:5px;margin-top:8px;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--teal)}
 .card .arrow{flex:none;font-size:17px;color:var(--aqua)}
 .ico{display:block;background-color:currentColor;-webkit-mask-position:center;mask-position:center;-webkit-mask-size:contain;mask-size:contain;-webkit-mask-repeat:no-repeat;mask-repeat:no-repeat}
-.tabs{position:sticky;top:var(--tb,64px);z-index:20;display:flex;overflow-x:auto;background:var(--paper);border-bottom:1px solid var(--line);scrollbar-width:none;scroll-snap-type:x proximity;-webkit-overflow-scrolling:touch}
+.tabs{position:sticky;top:var(--tb,64px);z-index:20;display:flex;overflow-x:auto;background:var(--paper);border-bottom:1px solid var(--line);scrollbar-width:none;scroll-snap-type:x proximity;-webkit-overflow-scrolling:touch;scroll-behavior:smooth;-webkit-mask-image:linear-gradient(90deg,#000 0,#000 calc(100% - 28px),transparent 100%);mask-image:linear-gradient(90deg,#000 0,#000 calc(100% - 28px),transparent 100%)}
 .tabs::-webkit-scrollbar{display:none}
 .tab{flex:none;scroll-snap-align:start;display:flex;align-items:center;gap:6px;min-height:46px;padding:12px 14px 10px;cursor:pointer;white-space:nowrap;font:400 12px 'Be Vietnam Pro',sans-serif;letter-spacing:.05em;color:#8f9ba2;background:transparent;border:0;border-bottom:2px solid transparent;transition:color .18s,background .18s}
 .tab:hover{background:#f1ece3;color:var(--navy)}
@@ -102,9 +102,7 @@ h2.title{margin:0;font-family:Montserrat,sans-serif;font-weight:400;font-size:cl
 .linkish{display:block;width:100%;margin-top:12px;text-align:center;font:400 12px 'Be Vietnam Pro',sans-serif;letter-spacing:.1em;color:var(--muted);cursor:pointer;background:none;border:0;padding:14px;transition:color .18s}
 .linkish:hover{color:var(--navy)}
 footer{margin-top:auto;flex:none;padding:clamp(20px,6vw,28px) var(--gut) calc(clamp(22px,6vw,30px) + env(safe-area-inset-bottom));border-top:1px solid var(--line);display:flex;flex-direction:column;align-items:center;gap:7px;background:var(--paper)}
-footer .fw{color:var(--aqua);width:clamp(56px,16vw,72px)}
-footer .w{font-family:Montserrat,sans-serif;font-weight:300;font-size:clamp(11px,3.2vw,12.5px);letter-spacing:.3em;text-indent:.3em;color:var(--navy)}
-footer .s{font-size:clamp(8px,2.3vw,9.5px);letter-spacing:.14em;color:#9aa8ae;text-align:center;text-wrap:balance;line-height:1.7;max-width:42ch}
+footer .flogo{width:clamp(104px,28vw,138px);height:auto}
 .fade{animation:fadeIn .35s ease-out both}
 @keyframes riseIn{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
 @keyframes fadeIn{from{opacity:0}to{opacity:1}}
@@ -151,9 +149,7 @@ body.edit .app{box-shadow:0 0 0 2px var(--terra),0 0 60px rgba(2,70,104,.10)}
 </div>
 <main id="view"></main>
 <footer id="foot">
-  <span class="fw" id="footwave"></span>
-  <div class="w" id="footname">AMÉRYS</div>
-  <div class="s" id="footline">FAMILY BOUTIQUE HOTEL · PHU QUOC</div>
+  <img src="images/logo-amerys.png" alt="AMÉRYS — Designed for togetherness" class="flogo" width="1473" height="699">
 </footer>
 </div></div>
 
@@ -397,8 +393,8 @@ const icon=(n,size)=>'<span class="ico" style="width:'+size+'px;height:'+size+'p
 
 /* Gợn sóng thương hiệu — một nét liền, có xoáy nhỏ */
 const WAVE_D="M4 62 C50 60 72 20 116 14 C150 9 170 36 196 42 C220 47 236 32 258 29 C288 25 302 46 302 60 C302 73 292 81 279 79 C266 77 259 66 266 57 C275 46 296 48 305 58 C322 77 354 82 380 67 C404 53 420 26 446 18 C472 10 497 16 516 26";
-const wave=(cls,w)=>'<svg class="'+cls+'" viewBox="0 0 520 96" fill="none" aria-hidden="true" width="'+(w||"100%")+'" preserveAspectRatio="none" style="width:100%;height:auto"><path d="'+WAVE_D+'" stroke="currentColor" stroke-width="7" stroke-linecap="round"/></svg>';
-const waveFit=cls=>'<svg class="'+cls+'" viewBox="0 0 520 96" fill="none" aria-hidden="true" style="width:100%;height:auto"><path d="'+WAVE_D+'" stroke="currentColor" stroke-width="7" stroke-linecap="round"/></svg>';
+const wave=(cls,w)=>'<svg class="'+cls+'" viewBox="0 0 520 96" fill="none" aria-hidden="true" width="'+(w||"100%")+'" preserveAspectRatio="none" style="width:100%;height:auto"><path d="'+WAVE_D+'" stroke="currentColor" stroke-width="5" stroke-linecap="round"/></svg>';
+const waveFit=cls=>'<svg class="'+cls+'" viewBox="0 0 520 96" fill="none" aria-hidden="true" style="width:100%;height:auto"><path d="'+WAVE_D+'" stroke="currentColor" stroke-width="5" stroke-linecap="round"/></svg>';
 
 let C=null, state={view:"home",i:0,edit:false};
 
@@ -409,11 +405,8 @@ function applyTheme(){const t=C.theme||{};for(const k of ["navy","teal","aqua","
 function toast(msg){const old=document.querySelector(".toast");if(old)old.remove();const d=document.createElement("div");d.className="toast";d.textContent=msg;document.body.appendChild(d);setTimeout(()=>d.remove(),2200)}
 function chrome(){const b=C.brand||{};
   document.getElementById("logomark").innerHTML=waveFit("");
-  document.getElementById("footwave").innerHTML=waveFit("");
   document.getElementById("logoname").textContent=b.name||"AMÉRYS";
   document.getElementById("logoplace").textContent=b.place||"PHU QUOC";
-  document.getElementById("footname").textContent=b.name||"AMÉRYS";
-  document.getElementById("footline").textContent=b.footer||"";
   document.getElementById("pillText").textContent=b.passport||"";
   measureTb();
 }
@@ -526,6 +519,8 @@ function render(){
   document.getElementById("view").innerHTML =
     state.view==="home"?homeView():state.view==="overview"?overviewView():detailView();
   editBar();
+  const tabs=document.querySelector(".tabs"),on=tabs&&tabs.querySelector(".tab.on");
+  if(tabs&&on)tabs.scrollLeft=Math.max(0,on.offsetLeft-20);
   if(!state.edit){
     const h=state.view==="detail"?("#tram-"+pad(state.i+1)):(state.view==="overview"?"#tram":"");
     history.replaceState(null,"",location.pathname+h);
