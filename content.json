@@ -1,0 +1,382 @@
+{
+  "theme": {
+    "navy": "#024668",
+    "teal": "#06859d",
+    "aqua": "#b4d5d8",
+    "sand": "#eaddca",
+    "terra": "#bf704c",
+    "paper": "#fbf8f3"
+  },
+  "brand": {
+    "name": "AMÉRYS",
+    "place": "PHU QUOC",
+    "passport": "Togetherness Passport",
+    "logo": "assets/logo-amerys.svg",
+    "logoFull": "assets/logo-amerys-pph.svg"
+  },
+  "hero": {
+    "titleTop": "THE STAMP",
+    "titleBottom": "PLAYBOOK",
+    "en": "Welcome to AMÉRYS, let the memories begin.\nThis guide will help you explore all 8 activities, collect stamps, and discover the rewards waiting for you.",
+    "vi": "Chào mừng bạn đến với AMÉRYS, hành trình gắn kết bắt đầu từ đây!\nCùng đồng đội khám phá tất tần tật 8 hoạt động thú vị, săn tem và mở khóa những phần thưởng đặc biệt.",
+    "cta": "Explore all activities",
+    "ctaSub": "Xem tất cả hoạt động"
+  },
+  "stations": [
+    {
+      "tab": "Say hi",
+      "en": "Check-in on social media",
+      "vi": "NHÀ MÌNH SAY HI!",
+      "icon": "camera",
+      "color": "#06859d",
+      "tEn": "Say hi to your first AMÉRYS memory together.",
+      "tVi": "Cả nhà lên hình - hành trình tích tem bắt đầu!",
+      "steps": [
+        {
+          "vi": "Chụp một bức ảnh cùng nhau.",
+          "en": "Take a photo together."
+        },
+        {
+          "vi": "Đăng ảnh lên Facebook và tag fanpage <a href=\"https://www.facebook.com/ameryshotels\" target=\"_blank\" rel=\"noopener\">@AMÉRYS Hotel Phu Quoc</a> kèm hashtag <b style=\"color:#8E0B20\">#AmerysPhuQuoc</b>",
+          "en": "Post your photo on Facebook, tag <a href=\"https://www.facebook.com/ameryshotels\" target=\"_blank\" rel=\"noopener\">@AMÉRYS Hotel Phu Quoc</a>, and use #AmerysPhuQuoc"
+        }
+      ],
+      "locVi": "AMÉRYS Hotel Phu Quoc",
+      "locEn": "Sảnh chính hoặc bất kỳ đâu trong khách sạn",
+      "locShort": "Toàn khách sạn",
+      "photo": "images/loc-lobby.jpg",
+      "noteEn": "Complete the activity and collect +1 stamp at Reception.",
+      "noteVi": "Hoàn thành hoạt động và nhận +1 tem tại Lễ tân."
+    },
+    {
+      "tab": "Sunset",
+      "en": "Sunset Together",
+      "vi": "BẠN MUỐN HẸN HÒ... VỚI SUNSET?",
+      "icon": "sunset",
+      "color": "#bf704c",
+      "tEn": "Pick your favorite sunset spot and make a date with the sky.",
+      "tVi": "Chọn một góc thật đẹp và hẹn nhau lúc mặt trời chạm biển.",
+      "steps": [
+        {
+          "vi": "Kiểm tra khung giờ hoàng hôn trong ngày.",
+          "en": "Check today's sunset time."
+        },
+        {
+          "vi": "Cùng nhau ngắm hoàng hôn.",
+          "en": "Enjoy the sunset together."
+        },
+        {
+          "vi": "Chụp lại khoảnh khắc bên nhau.",
+          "en": "Take a photo of the moment."
+        }
+      ],
+      "locVi": "Góc ngắm hoàng hôn bạn yêu thích",
+      "locEn": "Your favorite sunset spot",
+      "locShort": "Ngoài trời",
+      "photo": "images/loc-sunset.jpg",
+      "noteEn": "Complete the activity and collect +1 stamp at Reception.",
+      "noteVi": "Hoàn thành hoạt động và nhận +1 tem tại Lễ tân."
+    },
+    {
+      "tab": "Danh hoạ",
+      "en": "Create Together",
+      "vi": "THÁCH THỨC DANH HỌA",
+      "icon": "palette",
+      "color": "#024668",
+      "tEn": "One table, many colors, one little masterpiece together.",
+      "tVi": "Mỗi người góp một nét, cả nhà cùng tạo nên một “kiệt tác”.",
+      "steps": [
+        {
+          "vi": "Đến Khu vui chơi trẻ em Azuria trong khung giờ hoạt động.",
+          "en": "Visit Azuria Kid Club during opening hours."
+        },
+        {
+          "vi": "Dùng vật liệu được chuẩn bị sẵn để cùng hoàn thành một tác phẩm.",
+          "en": "Use the materials provided to create one artwork together."
+        },
+        {
+          "vi": "Chụp một bức ảnh cùng tác phẩm sau khi hoàn thành.",
+          "en": "Take a photo together with your finished artwork."
+        }
+      ],
+      "locVi": "Khu vui chơi trẻ em Azuria (Tầng 1, 08:00–20:30)",
+      "locEn": "Azuria Kid Club (Floor 1, 08:00–20:30)",
+      "locShort": "Azuria Kid Club · T1",
+      "photo": "images/loc-kidclub-entrance.jpg",
+      "noteEn": "Complete the activity and collect +1 stamp at Reception.",
+      "noteVi": "Hoàn thành hoạt động và nhận +1 tem tại Lễ tân."
+    },
+    {
+      "tab": "Lâu đài cát",
+      "en": "Build Our Family Castle",
+      "vi": "CUỘC ĐUA ĐẦY CÁT",
+      "icon": "castle",
+      "color": "#06859d",
+      "tEn": "Buckets ready. Shovels ready. Let the castle challenge begin!",
+      "tVi": "Xô sẵn sàng. Xẻng sẵn sàng. Cả nhà cùng xây lâu đài thôi nào!",
+      "steps": [
+        {
+          "vi": "Đến khu vực cát và chọn dụng cụ có sẵn.",
+          "en": "Head to the sand play area and pick up the tools provided."
+        },
+        {
+          "vi": "Cùng nhau xây lâu đài cát.",
+          "en": "Build your castle together."
+        },
+        {
+          "vi": "Chụp một bức ảnh cùng lâu đài sau khi hoàn thành.",
+          "en": "Take a photo together with your finished castle."
+        }
+      ],
+      "locVi": "Azuria Kid Club",
+      "locEn": "Azuria Kid Club (1st Floor, 08:00–20:30)",
+      "locShort": "Azuria Kid Club · T1",
+      "photo": "images/loc-kidclub.jpg",
+      "noteEn": "Complete the activity and collect +1 stamp at Reception.",
+      "noteVi": "Hoàn thành hoạt động và nhận +1 tem tại Lễ tân."
+    },
+    {
+      "tab": "Bữa sáng",
+      "en": "Family Breakfast",
+      "vi": "“MASTER” CHÉN",
+      "icon": "coffee",
+      "color": "#bf704c",
+      "tEn": "No need to be a MasterChef - just master the breakfast table.",
+      "tVi": "Không cần làm MasterChef - chỉ cần cả nhà “chén” thật vui!",
+      "steps": [
+        {
+          "vi": "Cùng nhau dùng bữa sáng.",
+          "en": "Enjoy breakfast with your partner."
+        },
+        {
+          "vi": "Chụp lại bữa ăn sáng cùng nhau.",
+          "en": "Take a photo of your breakfast."
+        }
+      ],
+      "locVi": "Caya Restaurant (Floor 2)",
+      "locEn": "Nhà hàng Caya (Tầng 2) \nOperation hours | Giờ hoạt động: 06:30 - 22:30",
+      "locShort": "Nhà hàng",
+      "photo": "images/loc-restaurant.jpg",
+      "noteEn": "Complete the activity and collect +1 stamp at Reception.",
+      "noteVi": "Hoàn thành hoạt động và nhận +1 tem tại Lễ tân."
+    },
+    {
+      "tab": "Đánh giá",
+      "en": "Share Your Stay",
+      "vi": "KÝ ỨC VUI VẺ",
+      "icon": "star",
+      "color": "#024668",
+      "tEn": "A good memory is even better when it gets shared.",
+      "tVi": "Một kỳ nghỉ càng đáng nhớ hơn khi được kể lại.",
+      "steps": [
+        {
+          "vi": "Quét mã QR trên Welcome Card để truy cập Google Maps hoặc TripAdvisor.",
+          "en": "Scan the QR code on your Welcome Card to open Google Maps or TripAdvisor."
+        },
+        {
+          "vi": "Chọn số sao theo trải nghiệm thực tế, viết vài dòng cảm nhận và gửi đánh giá.",
+          "en": "Choose a rating based on your real experience, write a short review and submit it."
+        }
+      ],
+      "locVi": "AMÉRYS Hotel Phu Quoc",
+      "locEn": "",
+      "locShort": "Online",
+      "photo": "images/loc-reception.jpg",
+      "noteEn": "Complete the activity and collect +1 stamp at Reception.",
+      "noteVi": "Hoàn thành hoạt động và nhận +1 tem tại Lễ tân."
+    },
+    {
+      "tab": "Bưu thiếp",
+      "en": "Postcard to your beloved",
+      "vi": "“DEAR” ĐI CHỜ CHI",
+      "icon": "mail",
+      "color": "#06859d",
+      "tEn": "Dear someone, a little piece of Phu Quoc is on its way.",
+      "tVi": "Có lời muốn gửi thì “Dear” đi chờ chi!",
+      "steps": [
+        {
+          "vi": "Nhận một tấm bưu thiếp AMÉRYS tại Memory Corner.",
+          "en": "Pick up an AMÉRYS postcard at the Memory Corner."
+        },
+        {
+          "vi": "Viết lời nhắn và địa chỉ người nhận.",
+          "en": "Write your message and the recipient's address."
+        },
+        {
+          "vi": "Bỏ bưu thiếp vào hòm thư để nhận +1 tem. AMÉRYS sẽ giúp bạn gửi đi.",
+          "en": "Drop your postcard into the mailbox to collect +1 stamp. AMÉRYS will send it for you."
+        }
+      ],
+      "locVi": "Sảnh chính",
+      "locEn": "Lobby · Memory Corner",
+      "locShort": "Sảnh chính",
+      "photo": "",
+      "noteEn": "Complete the activity and collect +1 stamp at Reception.",
+      "noteVi": "Hoàn thành hoạt động và nhận +1 tem tại Lễ tân.",
+      "photos": [
+        {
+          "src": "images/postcard-front.jpg",
+          "alt": "AMÉRYS postcard — front"
+        },
+        {
+          "src": "images/postcard-back.jpg",
+          "alt": "AMÉRYS postcard — back"
+        }
+      ]
+    },
+    {
+      "tab": "Spa",
+      "en": "Spa Experience",
+      "vi": "ƠN GIỜI, SPA ĐÂY RỒI!",
+      "icon": "flower-2",
+      "color": "#bf704c",
+      "tEn": "Your only mission here: relax.",
+      "tVi": "Nhiệm vụ duy nhất ở trạm này: thư giãn.",
+      "steps": [
+        {
+          "vi": "Trải nghiệm một dịch vụ bất kỳ tại LES SENS Spa & Wellness.",
+          "en": "Enjoy an experience at LES SENS Spa & Wellness."
+        },
+        {
+          "vi": "Chia sẻ đánh giá về trải nghiệm dịch vụ trên Google.",
+          "en": "Leave a review of LES SENS Spa & Wellness on Google."
+        },
+        {
+          "vi": "Chụp thêm một tấm hình kỷ niệm để nhận thêm +1 tem.",
+          "en": "Take a keepsake photo if you'd like to collect an extra stamp."
+        }
+      ],
+      "locVi": "Les Sens Spa & Wellness",
+      "locEn": "Floor 7 | Tầng 7 | 09:00 - 21:00",
+      "locShort": "LES SENS · T7",
+      "photo": "images/loc-spa.jpg",
+      "noteEn": "Complete the activity and collect up to +2 stamps at Les Sens Spa & Wellness.",
+      "noteVi": "Hoàn thành hoạt động và nhận đến +2 tem tại Les Sens Spa & Wellness."
+    }
+  ],
+  "ui": {
+    "noteVi": "Hoàn thành hoạt động và nhận +1 tem tại Lễ tân.",
+    "noteEn": "Complete the activity and collect +1 stamp at Reception.",
+    "prevVi": "Trạm trước",
+    "prevEn": "Previous",
+    "nextVi": "Trạm kế",
+    "nextEn": "Next",
+    "allVi": "Xem tất cả các trạm",
+    "allEn": "See all stations",
+    "backVi": "Về trang giới thiệu",
+    "backEn": "Back to intro",
+    "howVi": "Cách tham gia",
+    "howEn": "How to join",
+    "locVi": "Địa điểm",
+    "locEn": "Location",
+    "listVi": "Chạm vào một trạm để xem hướng dẫn chi tiết.",
+    "listEn": "Tap a station for the full guide.",
+    "stationWord": "TRẠM",
+    "stationWordEn": "STATION",
+    "stationsEn": "STATIONS",
+    "rewardsVi": "Phần thưởng",
+    "rewardsEn": "COLLECT STAMPS, UNLOCK REWARDS",
+    "seeRewardsEn": "See your rewards",
+    "seeRewardsVi": "Chi tiết phần thưởng",
+    "rewardsWordEn": "Rewards"
+  },
+  "rewards": {
+    "headEn": "YOUR REWARDS AWAIT",
+    "headVi": "PHẦN THƯỞNG ĐANG CHỜ BẠN",
+    "leadEn": "The more you explore, the more you unlock.",
+    "leadVi": "Mỗi cột mốc tem là một phần quà đang chờ Quý khách.",
+    "fineEn": "Terms and conditions apply.",
+    "fineVi": "Điều khoản và điều kiện áp dụng.",
+    "tiers": [
+      {
+        "countVi": "01 TEM",
+        "countEn": "01 STAMP",
+        "num": "01",
+        "titleEn": "A LITTLE TREAT",
+        "titleVi": "QUÀ NHỎ KHỞI ĐỘNG",
+        "color": "#bf704c",
+        "icon": "gift",
+        "leadEn": "Complete your first activity and choose 1 of 3 complimentary coupons:",
+        "leadVi": "Hoàn thành hoạt động đầu tiên để nhận 1 trong 3 coupon ưu đãi:",
+        "items": [
+          {
+            "en": "Complimentary drink with dinner at CAYA RESTAURANT",
+            "vi": "01 thức uống miễn phí khi dùng bữa tối tại Nhà hàng Caya",
+            "icon": "cup-soda"
+          },
+          {
+            "en": "Complimentary body scrub with a couple spa package",
+            "vi": "01 liệu trình tẩy tế bào chết toàn thân miễn phí khi sử dụng gói spa dành cho cặp đôi",
+            "icon": "flower-2"
+          },
+          {
+            "en": "Complimentary trial experience at Genki House",
+            "vi": "01 trải nghiệm chăm sóc sức khỏe dành cho người cao tuổi tại Genki House",
+            "icon": "hotel"
+          }
+        ]
+      },
+      {
+        "countVi": "06/08 TEM",
+        "countEn": "06/08 STAMPS",
+        "num": "06",
+        "titleEn": "SPIN & WIN",
+        "titleVi": "QUAY LÀ CÓ QUÀ",
+        "color": "#06859d",
+        "icon": "sparkles",
+        "leadEn": "Complete 6 out of 8 activities to join the Lucky Spin and randomly receive one of the gifts below:",
+        "leadVi": "Hoàn thành 6/8 hoạt động để tham gia Vòng quay may mắn và nhận ngẫu nhiên một món quà bên dưới:",
+        "items": [
+          {
+            "en": "Ami Teddy Bear",
+            "vi": "Gấu bông Ami",
+            "icon": "gift"
+          },
+          {
+            "en": "Ami Charm / Keychain",
+            "vi": "Charm / móc khoá Ami",
+            "icon": "key-round"
+          },
+          {
+            "en": "Hotel Kids’ Amenities Kit",
+            "vi": "Bộ tiện nghi dành cho trẻ em",
+            "icon": "shopping-bag"
+          }
+        ]
+      },
+      {
+        "countVi": "08/08 TEM",
+        "countEn": "08/08 STAMPS",
+        "num": "08",
+        "titleEn": "THE GRAND REWARD",
+        "titleVi": "CHINH PHỤC ĐỦ 8 – SĂN QUÀ LỚN",
+        "color": "#024668",
+        "icon": "landmark",
+        "leadEn": "Complete all 8 activities to enter the Lucky Draw for a chance to win:",
+        "leadVi": "Hoàn thành đủ 8 hoạt động để tham gia Lucky Draw với cơ hội nhận:",
+        "items": [
+          {
+            "en": "1-night complimentary stay at AMÉRYS Hotel Phu Quoc",
+            "vi": "01 đêm nghỉ miễn phí tại AMÉRYS Hotel Phu Quoc",
+            "icon": "bed-double"
+          },
+          {
+            "en": "2-night complimentary stay at a Private Palace Hotels",
+            "vi": "02 đêm nghỉ miễn phí tại một khách sạn thuộc hệ thống Private Palace Hotels",
+            "icon": "tree-palm"
+          }
+        ],
+        "photos": [
+          {
+            "src": "images/reward-room.jpg",
+            "alt": "AMÉRYS Boutique Hotel Phu Quoc"
+          },
+          {
+            "src": "images/reward-resort.jpg",
+            "alt": "Private Palace Hotels & Resorts"
+          }
+        ]
+      }
+    ]
+  }
+}
